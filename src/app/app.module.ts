@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,6 +9,8 @@ import { FooterComponent } from './footer/footer.component';
 import { MainComponent } from './main/main.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { TitleComponent } from './title/title.component';
+import { FiltreComponent } from './filtre/filtre.component';
+import { SeasonComponent } from './season/season.component';
 
 @NgModule({
   declarations: [
@@ -16,11 +19,14 @@ import { TitleComponent } from './title/title.component';
     FooterComponent,
     MainComponent,
     NavbarComponent,
-    TitleComponent
+    TitleComponent,
+    FiltreComponent,
+    SeasonComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

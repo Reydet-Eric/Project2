@@ -1,0 +1,12 @@
+<p>season works!</p>
+We purpose you a list of vegetables and fruits of season.
+Choose one or many items and you purpose you a recipe.
+
+<fieldset>
+  <ul>
+  <span *ngFor="let vegetable of veget">
+    <input type="checkbox" [(ngModel)]="vegetable.isChecked" (change)="changeSelection()">
+    <label for="seasonBox" id="seasonBox">{{vegetable.name}}</label>
+  </span>
+</ul>
+</fieldset>
