@@ -1,2 +1,27 @@
-<app-navbar></app-navbar>
-<app-title></app-title>
+
+<div class="header">
+  <div class="entete">
+    <div class="sousEntete">
+     <img class="logo" src="./assets/logo-cuisine.jpg" alt="logo">
+     <p class="date">{{datedujour | date: "dd MMMM yyyy"}} - Season: {{saison}}  <img class="icon" src={{urlsaison}}></p>
+     
+    </div> 
+
+<nav id="my-first">
+
+<ul>
+  <li class="burger" (click)="toggleMenu()">
+      <i class="material-icons">{{ isMenuOpen ? "X" : "=" }}</i>
+  </li>
+  <li class="menu" [class.is-open]="isMenuOpen">
+    <a href="#" class="menu-item">Home</a>
+    <a href="#" class="menu-item">About</a>
+    <a href="#" class="menu-item">Recipes</a>
+    <a href="#" class="menu-item">Seasons</a>
+  </li>
+</ul>
+</nav>
+</div>
+<h1>Mangez de saison</h1>
+<h2>En toute occasion et sans pression</h2>
+</div>
