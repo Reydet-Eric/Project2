@@ -1,12 +1,24 @@
-<p>season works!</p>
-We purpose you a list of vegetables and fruits of season.
-Choose one or many items and you purpose you a recipe.
+<h1>test</h1>
+mois actuel: {{month}}
 
-<fieldset>
-  <ul>
-  <span *ngFor="let vegetable of veget">
-    <input type="checkbox" [(ngModel)]="vegetable.isChecked" (change)="changeSelection()">
-    <label for="seasonBox" id="seasonBox">{{vegetable.name}}</label>
-  </span>
-</ul>
-</fieldset>
+<h3>list of vegetables and fruits of season:</h3>
+
+
+<button (click)="submit()">Générer une recette</button><br>
+
+<span>liste des ingredients a rajouter à la requête:</span><br>
+<section>
+  <form [formGroup]="form" (ngSubmit)="submit()" novalidate>
+<div *ngFor="let item of veget; let i=index">
+  <input type="checkbox" formArrayName="selectedItems" [value]="item.name" (change)="onCheckboxChange($event)"/>
+{{item.name}}
+</div>
+  </form>
+   {{form.value | json}}
+</section>
+requet HTTP: {{URL+list}}
+<br>
+{{resultat.title}}<br>
+<img [src]=resultat.image alt="thumb">
+
+
