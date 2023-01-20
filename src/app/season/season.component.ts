@@ -1,14 +1,14 @@
 import { Component, OnInit } from '@angular/core';
-import { FormBuilder, FormGroup,FormArray, FormControl } from '@angular/forms';
+import { FormBuilder, FormGroup,FormArray, FormControl,ReactiveFormsModule } from '@angular/forms';
 import { HttpClient} from '@angular/common/http'
 
 @Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  selector: 'app-season',
+  templateUrl: './season.component.html',
+  styleUrls: ['./season.component.scss']
 })
-export class AppComponent implements OnInit{
-  title = 'test-date';
+export class SeasonComponent implements OnInit{
+
   season: Array<any> = [
     {name:"eggplant",mois:[5,6,7,8,9]},
     {name:"cauliflower",mois:[3,4,5,6,7,8,9,10,11]},
@@ -40,7 +40,7 @@ resultat: any
 list: any
 URL="https://www.themealdb.com/api/json/v1/1/filter.php?i="
 
-constructor(fb: FormBuilder, public hhtp: HttpClient){
+constructor(fb: FormBuilder, public http: HttpClient){
   this.form = fb.group({
     selectedItems: new FormArray([])
   });
@@ -75,7 +75,7 @@ submit(){
 
     this.list=this.form.value.selectedItems.join();
   console.log(`${this.URL}${this.list}`)
-  this.hhtp.get<any>(this.URL+this.list).subscribe(response => {
+  this.http.get<any>(this.URL+this.list).subscribe(response => {
 this.resultat=response
 
 this.resultat.title=response.meals[0].strMeal;

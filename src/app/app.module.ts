@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {HttpClientModule} from '@angular/common/http'
 
 import { AppRoutingModule } from './app-routing.module';
@@ -10,9 +10,9 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainComponent } from './main/main.component';
-import { TitleComponent } from './title/title.component';
-// import { SeasonComponent } from './season/season.component';
+import { SeasonComponent } from './season/season.component';
 import { RecetteComponent } from './recette/recette.component';
+
 
 
 @NgModule({
@@ -21,15 +21,13 @@ import { RecetteComponent } from './recette/recette.component';
     HeaderComponent,
     FooterComponent,
     MainComponent,
-    TitleComponent,
     RecetteComponent,
-    // SeasonComponent
+    SeasonComponent,
   ],
-
   imports: [
     BrowserModule,
     AppRoutingModule,FormsModule,HttpClientModule,
-    Ng2SearchPipeModule,
+    Ng2SearchPipeModule,ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
