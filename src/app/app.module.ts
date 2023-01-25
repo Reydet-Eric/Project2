@@ -8,9 +8,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { MainComponent } from './main/main.component';
-import { NavbarComponent } from './navbar/navbar.component';
-import { TitleComponent } from './title/title.component';
 import { RecetteComponent } from './recette/recette.component';
+import { InstructionComponent } from './instruction/instruction.component';
 
 @NgModule({
   declarations: [
@@ -18,13 +17,14 @@ import { RecetteComponent } from './recette/recette.component';
     HeaderComponent,
     FooterComponent,
     MainComponent,
-    NavbarComponent,
-    TitleComponent,
-    RecetteComponent
+    RecetteComponent,
+    InstructionComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,FormsModule,HttpClientModule,
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
     Ng2SearchPipeModule,
   ],
   providers: [],

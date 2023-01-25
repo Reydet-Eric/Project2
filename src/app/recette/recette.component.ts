@@ -2,6 +2,7 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { getLocaleMonthNames } from '@angular/common';
+
 @Component({
   selector: 'app-recette',
   templateUrl: './recette.component.html',
@@ -39,17 +40,11 @@ junary : any;
       this.meals = responseObj.meals;
     });
    
-    
-    
-
   }
-  
 
-  
-
-  affiche(){
-    console.log(this.reponse.meals[0].strMeal);
-    // this.titre1 = this.reponse[0].title;
-  }
+  // affiche(){
+  //   console.log(this.reponse.meals[0].strMeal);
+  //   // this.titre1 = this.reponse[0].title;
+  // }
 
 }
