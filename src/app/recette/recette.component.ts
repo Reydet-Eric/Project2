@@ -1,5 +1,5 @@
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { getLocaleMonthNames } from '@angular/common';
 
@@ -13,26 +13,22 @@ export class RecetteComponent implements OnInit {
   titre1 : any;
   reponse : any;
   meals: any;
- searchText : any;
-//   hero = [
-// {id :"123",name :" alioune" , age : 31},
-// {id :"1234",name :" marie" , age : 32},
-// {id :"321",name :" awa" , age : 35},
-// {id :"231",name :" penda" , age : 40}
 
-//   ]
+  // INPUT POUR TRANSMETTRE l'information de la liste de légume ) la barre de recherche  --
+  @Input()
+ public searchText! : string;
 
-date : any;
-junary : any;
+
+
+//  api alimentaire choisi ----
 
   URL2 = 'https://www.themealdb.com/api/json/v1/1/search.php?s&count=20';
-  URL = 'https://api.spoonacular.com/recipes/findByIngredients?ingredients=apples,+flour,+sugar&number=15&apiKey=0c18793ad48c47959809d7f8978e8f0b'
   constructor (public http: HttpClient,  ){
 
-    // this.titre1 = this.reponse[0].name
 
 
   }
+//  méthode pour récupérer l'API ----
 
   ngOnInit(): void {
     this.http.get<any>(this.URL2).subscribe(responseObj => {
@@ -42,9 +38,11 @@ junary : any;
    
   }
 
-  // affiche(){
-  //   console.log(this.reponse.meals[0].strMeal);
-  //   // this.titre1 = this.reponse[0].title;
-  // }
+  
+// méthode test pour voir si l'api fonctionne ( la fonction n'est pas utilisé dans lapplication )
+  affiche(){
+    console.log(this.reponse.meals[0].strMeal);
+    // this.titre1 = this.reponse[0].title;
+  }
 
 }
