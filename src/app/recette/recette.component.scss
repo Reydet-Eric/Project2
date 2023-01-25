@@ -2,7 +2,7 @@
   .contenu{
     display: inline;
    justify-content: center;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
      margin-top: 40px;
   }
    
@@ -12,36 +12,36 @@
     border: 20px solid #fff;
     box-shadow: 20px 15px 35px rgba(0,0,0, 0.8);
   }
-  
+
 .contenu .box .imbox{
     position: relative;
     width: 100%;
     height: 300px;
   }
 img{
-    
+
    width: 80%;
-    
+
   }
-  
+
  .contenu .box .text{
     text-align: center;
     font-weight: 300px;
     color: #111;
   }
-  
+
  .contenu .box .text h3{
     font-weight: 400;
   }
 
   .searchBar{
-   
+
     text-align: center;
     margin-top: 70px;
   }
-  
+
   @media screen and (max-width : 640px){
-  
+
     }
 .bloc{
     display:flex;

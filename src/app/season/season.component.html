@@ -1,5 +1,3 @@
-<h1>test</h1>
-mois actuel: {{month}}
 
 <h3>list of vegetables and fruits of season:</h3>
 
@@ -9,17 +7,17 @@ mois actuel: {{month}}
 <span>liste des ingredients a rajouter à la requête:</span><br>
 <section>
   <form [formGroup]="form" (ngSubmit)="submit()" novalidate>
-<div *ngFor="let item of veget; let i=index">
-  <input type="checkbox" formArrayName="selectedItems" [value]="item.name" (change)="onCheckboxChange($event)"/>
-{{item.name}}
-</div>
+       <div class="collection">
+    <div class="veget" *ngFor="let item of veget; let i=index">
+           <input type="checkbox" formArrayName="selectedItems" [value]="item.name" (change)="onCheckboxChange($event)" />
+        {{item.name}}
+        <img src="{{item.clipart}}" alt="clipart" width="50px" height="50px">
+     </div>
+    </div>
   </form>
-   {{form.value | json}}
+  {{form.value | json}}
 </section>
 requet HTTP: {{URL+list}}
 <br>
 {{resultat.title}}<br>
 <img [src]=resultat.image alt="thumb">
-
-
-
