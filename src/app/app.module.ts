@@ -23,13 +23,18 @@ import { InstructionComponent } from './instruction/instruction.component';
     FooterComponent,
     MainComponent,
     RecetteComponent,
-    SeasonComponent,InstructionComponent
+    SeasonComponent,
+    InstructionComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,FormsModule,HttpClientModule,
-    Ng2SearchPipeModule,ReactiveFormsModule
+    AppRoutingModule,
+    FormsModule,
+    HttpClientModule,
+    Ng2SearchPipeModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
 })
+export class AppModule{}
