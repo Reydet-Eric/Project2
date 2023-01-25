@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 
   .contenu{
     display: inline;
@@ -6,10 +6,10 @@
     flex-wrap: wrap;
      margin-top: 40px;
   }
-=======
+
 @import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
->>>>>>> 94f5605c1da8c83d5c9a0ba419c523a3f9c3645e
-   
+
+
 
  .contenu .box{
     width: 100%;
@@ -43,7 +43,7 @@ img{
 
     text-align: center;
     margin-top: 70px;
-    
+
   }
   .searchbarr{
     padding: 10px;
@@ -77,29 +77,29 @@ img{
   .search_button:hover {
     background-color: hsl(0, 0%, 85%);
   }
-<<<<<<< HEAD
+
 
   @media screen and (max-width : 640px){
 
     }
-=======
-  
 
->>>>>>> 94f5605c1da8c83d5c9a0ba419c523a3f9c3645e
+
+
+
 .bloc{
     display:flex;
     flex-wrap:wrap;
-    
 
-    
-  
-    
+
+
+
+
 }
 .contenu{
 
   width: 80%;
-  
-   
+
+
 }
 
 @media screen and (min-width: 400px) and (max-width : 900px) {
@@ -108,9 +108,9 @@ img{
     width: 35%;
   }
   .bloc {
-   
+
     gap: 10%;
-    
+
     margin-top: 5%;
   }
   .searchbarr{
@@ -120,11 +120,11 @@ img{
 @media screen and  (min-width : 900px) {
   .contenu {
     width: 40%;
-<<<<<<< HEAD
+
 }
-=======
-    
-  }
+
+
+
   .bloc {
     // gap: 150px;
     gap: 10%;
@@ -134,4 +134,4 @@ img{
     width: 250px;
   }
 }
->>>>>>> 94f5605c1da8c83d5c9a0ba419c523a3f9c3645e
+

@@ -9,10 +9,9 @@ import { ServicerecetteService } from 'src/app/servicerecette.service';
   styleUrls: ['./season.component.scss']
 })
 export class SeasonComponent implements OnInit{
- 
+
   public ingredient : any ;
   season: Array<any> = [
-<<<<<<< HEAD
     {name:"eggplant",mois:[5,6,7,8,9],clipart:"../assets/cliparts/eggplant-clipart.svg"},
     {name:"cauliflower",mois:[3,4,5,6,7,8,9,10,11],clipart:"../assets/cliparts/cauliflower-clipart.svg"},
     {name:"mushrooms",mois:[1,2,3,4,5,6,7,8,9,10,11,12],clipart:"../assets/cliparts/mushrooms-clipart.svg"},
@@ -29,32 +28,10 @@ export class SeasonComponent implements OnInit{
     {name:"spinach",mois:[3,4,5,6,9,10],clipart:"../assets/cliparts/spinach-clipart.svg"},
     {name:"tomatoes",mois:[4,5,6,7,8,9,10,11],clipart:"../assets/cliparts/tomato-clipart.svg"},
     {name:"onions",mois:[1,2,3,4,5,6,7,8,9,10,11,12],clipart:"../assets/cliparts/onion-clipart.svg"},
-    {name:"apples",mois:[1,2,3,4,8,9,10,11,12],clipart:"../assets/cliparts/apple-clipart.svg"},
+    {name:"apple",mois:[1,2,3,4,8,9,10,11,12],clipart:"../assets/cliparts/apple-clipart.svg"},
     {name:"strawberries",mois:[5,6,7,8],clipart:"../assets/cliparts/strawberries-clipart.svg"},
     {name:"raspberries",mois:[6,7,8,9],clipart:"../assets/cliparts/raspberry-clipart.svg"},
     {name:"rhubarb",mois:[4,5,6],clipart:"../assets/cliparts/rhubarb-clipart.svg"}
-=======
-    {name:"egg",mois:[5,6,7,8,9]},
-    {name:"oil",mois:[3,4,5,6,7,8,9,10,11]},
-    {name:"mushrooms",mois:[1,2,3,4,5,6,7,8,9,10,11,12]},
-    {name:"endive",mois:[1,2,3,4,10,11,12]},
-    {name:"chinese cabbage",mois:[1,2,3,8,9,10,11,12]},
-    {name:"collard",mois:[1,2,11,12]},
-    {name:"potatoes",mois:[1,2,3,4,5,6,7,8,9,10,11,12]},
-    {name:"carrots",mois:[1,2,3,4,5,6,7,8,9,10,11,12]},
-    {name:"brussels_sprouts",mois:[1,2,10,11,12]},
-    {name:"milk",mois:[1,2,3,9,10,11,12]},
-    {name:"oil",mois:[1,2,3,9,10,11,12]},
-    {name:"egg",mois:[1,2,3,9,10,11,12]},
-    {name:"asparagus",mois:[4,5,6]},
-    {name:"spinach",mois:[3,4,5,6,9,10]},
-    {name:"tomatoes",mois:[4,5,6,7,8,9,10,11]},
-    {name:"onions",mois:[1,2,3,4,5,6,7,8,9,10,11,12]},
-    {name:"apple",mois:[1,2,3,4,8,9,10,11,12]},
-    {name:"cheese",mois:[5,6,7,8]},
-    {name:"milk",mois:[6,7,8,9]},
-    {name:"rhubarb",mois:[4,5,6]}
->>>>>>> 94f5605c1da8c83d5c9a0ba419c523a3f9c3645e
     ]
 date= new Date()
 month = this.date.getMonth()+1
@@ -71,7 +48,7 @@ URL="https://www.themealdb.com/api/json/v1/1/filter.php?i="
 constructor(fb: FormBuilder, public http: HttpClient , private servicerecetteService : ServicerecetteService){
   this.form = fb.group({
     selectedItems: new FormArray([]),
- 
+
   })
   this.ingredient = this.list
   ;
@@ -85,18 +62,17 @@ veget = this.season.filter((fruits => {
 
 ngOnInit():void {
   this.selectedItemsSeason();
-<<<<<<< HEAD
-this.submit()
-=======
+this.submit();
+
   this.servicerecetteService.getPost().subscribe((recipe)=>{
  console.log("reeeesult",recipe )
- this.newRecipe = recipe 
+ this.newRecipe = recipe
   })
->>>>>>> 94f5605c1da8c83d5c9a0ba419c523a3f9c3645e
+
 }
 
 afficher(){
-  
+
 }
 selectedItemsSeason() {
   this.selectedItemsList = this.veget.filter((value, index) => {
