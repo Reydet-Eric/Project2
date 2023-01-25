@@ -1,25 +1,29 @@
-<h1>test</h1>
-mois actuel: {{month}}
 
-<h3>list of vegetables and fruits of season:</h3>
+<div class="contenuList">
+  <div class="ingredientTitre" >
+<h1>list of vegetables and fruits of season:</h1>
+<!-- <h1 (click)="afficher()">bonsoir  </h1> -->
+
+<button (click)="submit()">Générer une recette</button>
 
 
-<button (click)="submit()">Générer une recette</button><br>
+</div>
 
-<span>liste des ingredients a rajouter à la requête:</span><br>
 <section>
-  <form [formGroup]="form" (ngSubmit)="submit()" novalidate>
+  <form class="checking" [formGroup]="form" (ngSubmit)="submit()" novalidate>
 <div *ngFor="let item of veget; let i=index">
   <input type="checkbox" formArrayName="selectedItems" [value]="item.name" (change)="onCheckboxChange($event)"/>
-{{item.name}}
+ <H2>{{item.name}}</H2>
 </div>
-  </form>
-   {{form.value | json}}
+<h2>{{ingredient}} </h2>
+  </form> 
+   <!-- {{form.value | json}} -->
+   
 </section>
-requet HTTP: {{URL+list}}
-<br>
-{{resultat.title}}<br>
-<img [src]=resultat.image alt="thumb">
+
+</div>
 
 
 
+
+<app-recette [searchText]="ingredient"></app-recette>
