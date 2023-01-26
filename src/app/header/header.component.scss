@@ -2,6 +2,17 @@
 
 $menuHeight: 60px;
 $menuBreakpoint: 768px;
+.bloc1{
+
+.bloc1{
+  background-color: #103946;
+}
+
+.bloc1{
+
+   
+  background-color: #103946;
+  padding: 20px;
 
 .bloc1{
 
@@ -12,11 +23,15 @@ $menuBreakpoint: 768px;
 
 
 
+}
+
+background-color: #103946;
+}
 .entete{
 
   display:flex;
   flex-direction: column-reverse;
- 
+
 }
 
 .sousEntete{
@@ -27,7 +42,7 @@ $menuBreakpoint: 768px;
   background-color: #fff;
   padding: 20px;
   gap:20px;
- 
+
 }
 
 h1{
@@ -116,9 +131,9 @@ h2{
           border-bottom: 1px solid #cccccc;
           display: flex;
           justify-content: center;
-          
+
         }
-     
+
       }
     }
 

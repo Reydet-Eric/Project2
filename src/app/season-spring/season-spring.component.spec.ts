@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { TitleComponent } from './title.component';
+import { SeasonSpringComponent } from './season-spring.component';
 
-describe('TitleComponent', () => {
-  let component: TitleComponent;
-  let fixture: ComponentFixture<TitleComponent>;
+describe('SeasonSpringComponent', () => {
+  let component: SeasonSpringComponent;
+  let fixture: ComponentFixture<SeasonSpringComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ TitleComponent ]
+      declarations: [ SeasonSpringComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(TitleComponent);
+    fixture = TestBed.createComponent(SeasonSpringComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
