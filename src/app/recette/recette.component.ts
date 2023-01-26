@@ -2,6 +2,7 @@
 import { Component, OnInit, Input} from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { getLocaleMonthNames } from '@angular/common';
+
 @Component({
   selector: 'app-recette',
   templateUrl: './recette.component.html',
@@ -35,11 +36,7 @@ export class RecetteComponent implements OnInit {
       this.meals = responseObj.meals;
     });
    
-    
-    
-
   }
-  
 
   
 // méthode test pour voir si l'api fonctionne ( la fonction n'est pas utilisé dans lapplication )
