@@ -12,6 +12,7 @@ import { FooterComponent } from './footer/footer.component';
 import { MainComponent } from './main/main.component';
 import { SeasonComponent } from './season/season.component';
 import { RecetteComponent } from './recette/recette.component';
+import { HomeComponent } from './home/home.component';
 
 import { SeasonWinterComponent } from './season-winter/season-winter.component';
 import { SeasonSpringComponent } from './season-spring/season-spring.component';
@@ -30,13 +31,12 @@ import { InstructionComponent } from './instruction/instruction.component';
     FooterComponent,
     MainComponent,
     RecetteComponent,
-    SeasonComponent,
-
+    HomeComponent,
+     SeasonComponent,
     SeasonWinterComponent,
     SeasonSpringComponent,
     SeasonSummerComponent,
     SeasonAutomnComponent,
-
     InstructionComponent
 
   ],
