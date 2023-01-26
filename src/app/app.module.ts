@@ -13,6 +13,7 @@ import { MainComponent } from './main/main.component';
 import { TitleComponent } from './title/title.component';
 // import { SeasonComponent } from './season/season.component';
 import { RecetteComponent } from './recette/recette.component';
+import { HomeComponent } from './home/home.component';
 
 
 @NgModule({
@@ -23,6 +24,7 @@ import { RecetteComponent } from './recette/recette.component';
     MainComponent,
     TitleComponent,
     RecetteComponent,
+    HomeComponent,
     // SeasonComponent
   ],
 
