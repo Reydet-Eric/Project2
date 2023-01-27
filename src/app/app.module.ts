@@ -33,9 +33,8 @@ import { MealComponent } from './meal/meal.component';
     FooterComponent,
     MainComponent,
     RecetteComponent,
-<<<<<<< HEAD
     HomeComponent,
-     SeasonComponent,
+    SeasonComponent,
     SeasonWinterComponent,
     SeasonSpringComponent,
     SeasonSummerComponent,
@@ -43,11 +42,7 @@ import { MealComponent } from './meal/meal.component';
     InstructionComponent,
     MealComponent
 
-=======
-    SeasonComponent,
-    InstructionComponent,
-  
->>>>>>> alicia-modal
+
   ],
   imports: [
     BrowserModule,
