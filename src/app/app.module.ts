@@ -16,6 +16,7 @@ import { InstructionComponent } from './instruction/instruction.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import { InstructionComponent } from './instruction/instruction.component';
     MainComponent,
     RecetteComponent,
     SeasonComponent,
-    InstructionComponent
+    InstructionComponent,
+  
   ],
   imports: [
     BrowserModule,
