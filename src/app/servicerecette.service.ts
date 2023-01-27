@@ -4,7 +4,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class ServicerecetteService {
-
+touterecette : any;
 // variable declarée //
 season: Array<any> = [
   {name:"eggplant",mois:[5,6,7,8,9],clipart:"../assets/cliparts/eggplant-clipart.svg"},
@@ -41,11 +41,16 @@ season: Array<any> = [
 
  getPost(){
     return  this.http.get<any>(this.URL2);
-
+    // this.touterecette = this.http.get<any>(this.URL2);
     // subscribe(responseObjj => {
     //   console.log(responseObjj.meals, "response");
     //   this.mealss = responseObjj.meals;
     };
+
+
+    setRecette(recettes: any){
+      this.touterecette = recettes;
+    }
 
 getSeason(){
   return this.season

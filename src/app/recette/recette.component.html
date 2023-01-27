@@ -3,13 +3,15 @@
 
 <div class="searchBar">
     
-    <input type="text" name="search" [(ngModel)]="searchText" placeholder="Search your recipes">
+    <!-- <input type="text" name="search" [(ngModel)]="searchText" placeholder="Search your recipes"> -->
 <h1>{{meals[0].strMeal}}</h1>
     <input class="searchbarr" type="text" name="search" [(ngModel)]="searchText" placeholder="Search your recipes">
     <button  type="submit" class="search_button"><i class="fa fa-search"></i></button>
 <div class="bloc">
 
-<div class="contenu" *ngFor="let meal of meals |filter:searchText  ">
+  <!-- [routerLink]="['season']" [queryParams]="{debug: meals[0].strMeal}" -->
+  <!-- routerLink="/detail/{{hero.id}}" -->
+<div [routerLink]="['/meal', meal.idMeal]" [queryParams]="{idMeal:  meal.idMeal }"  class="contenu" *ngFor="let meal of meals |filter:searchText  ">
     <div class="box">
       <!-- <div class="imbox"> -->
         <h1>{{meal.strMeal}}</h1>
@@ -18,7 +20,7 @@
       <!-- <div class="text"> -->
         <h3> Ingrédient :</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aspernatur quia accusantium in officia reiciendis voluptates ad consequuntur earum sunt sed, accusamus odio facilis exercitationem optio odit ratione unde nulla.</p>
-   
+ 
       </div>
     </div>
 
