@@ -25,6 +25,7 @@ import { MealComponent } from './meal/meal.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +33,7 @@ import { MealComponent } from './meal/meal.component';
     FooterComponent,
     MainComponent,
     RecetteComponent,
+<<<<<<< HEAD
     HomeComponent,
      SeasonComponent,
     SeasonWinterComponent,
@@ -41,6 +43,11 @@ import { MealComponent } from './meal/meal.component';
     InstructionComponent,
     MealComponent
 
+=======
+    SeasonComponent,
+    InstructionComponent,
+  
+>>>>>>> alicia-modal
   ],
   imports: [
     BrowserModule,

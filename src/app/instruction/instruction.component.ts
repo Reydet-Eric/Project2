@@ -17,6 +17,27 @@ URL2 = 'https://www.themealdb.com/api/json/v1/1/search.php?s&count=20';
 meals: any = [];
 strMeal: any;
 
+
+strMeasure1: any;
+strMeasure2: any;
+strMeasure3: any;
+strMeasure4: any;
+strMeasure5: any;
+strMeasure6: any;
+strMeasure7: any;
+strMeasure8: any;
+strMeasure9: any;
+strMeasure10: any;
+strMeasure11: any;
+strMeasure12: any;
+strMeasure14: any;
+strMeasure15: any;
+strMeasure16: any;
+strMeasure17: any;
+strMeasure18: any;
+strMeasure19: any;
+strMeasure20: any;
+
 strInstructions: any;
 strIngredient1: any;
 strIngredient2: any;
