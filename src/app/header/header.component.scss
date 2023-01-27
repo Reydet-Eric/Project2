@@ -1,18 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@200&display=swap');
 
 $menuHeight: 60px;
-$menuBreakpoint: 768px;
-.bloc1{
-
-.bloc1{
-  background-color: #103946;
-}
-
-.bloc1{
-
-   
-  background-color: #103946;
-  padding: 20px;
 
 .bloc1{
 
@@ -21,16 +8,11 @@ $menuBreakpoint: 768px;
 }
 
 
-
-
-}
-
-background-color: #103946;
-}
 .entete{
 
   display:flex;
   flex-direction: column-reverse;
+ 
 
 }
 
@@ -40,8 +22,14 @@ background-color: #103946;
   flex-direction: column-reverse;
   align-items: center;
   background-color: #fff;
-  padding: 20px;
-  gap:20px;
+  padding: 10px;
+  gap:10px;
+  
+}
+
+.logo{
+
+  width:35%;
 
 }
 
@@ -50,7 +38,7 @@ h1{
   display: flex;
   justify-content: center;
   color:#fff;
-  font-size:35px;
+  font-size:30px;
   margin:10px;
   padding:0;
 
@@ -63,15 +51,11 @@ h2{
   color: #c08e37;
 }
 
-.logo{
-
-  width:40%;
-
-}
 
 .icon{
 
-  width: 6%;
+  width: 5%;
+
 }
 
 .date{
@@ -81,35 +65,37 @@ h2{
   flex-direction: row;
   align-items: center;
   justify-content: center;
+  
 
 }
 
-#my-first {
+  #my-first{
+
   ul {
-    margin: 0px;
-    padding: 0;
+
     justify-content: flex-end;
     display: flex;
-    background: #fff;
-    box-shadow: 0 2px 4px #000;
-
+    background:#fff;
+    
+    
   }
 
   .burger {
-    padding: 0 10px;
-    border-left: 1px solid #eee;
+    padding: 0 15px;
     display: none;
     cursor: pointer;
-
+    
     i {
       color: #000;
       line-height: $menuHeight;
       font-size: 20px;
       font-style: normal;
+     
     }
 
-    @media (max-width: $menuBreakpoint) {
+    @media (max-width:768px) {
       display: block;
+
     }
   }
 
@@ -117,44 +103,46 @@ h2{
     display: flex;
     align-items: center;
 
-    @media (max-width: $menuBreakpoint) {
-      display: none;
+
+
+    @media (max-width: 768px) {
+      display: none; 
 
       &.is-open {
         display: block;
         position: absolute;
-        top: #{$menuHeight + 2};
+        top: 100px;
         background: #fff;
         width: 100%;
+      
 
         .menu-item {
           border-bottom: 1px solid #cccccc;
           display: flex;
           justify-content: center;
-
+          
         }
 
       }
     }
 
     .menu-item {
-      padding: 5px 10px;
-      margin: 0 30px;
-      height: $menuHeight;
+      padding: 5px 5px;
+      margin: 0 20px;
       line-height: $menuHeight;
       text-decoration: none;
       display: block;
       text-transform: uppercase;
       font-size: 1 rem;
       font-weight: 600;
-      color: #454545;
+      
     }
 
-    .menu-item:hover{
+    .menu-item:active{
 
-      background-color: #c08e37;
+     color: #c08e37;
+    
+
     }
-
-
   }
 }
