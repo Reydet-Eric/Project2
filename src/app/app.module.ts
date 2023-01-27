@@ -20,7 +20,11 @@ import { SeasonSummerComponent } from './season-summer/season-summer.component';
 import { SeasonAutomnComponent } from './season-automn/season-automn.component';
 
 import { InstructionComponent } from './instruction/instruction.component';
+
+import { VegetableComponent } from './vegetable/vegetable.component';
+
 import { MealComponent } from './meal/meal.component';
+
 
 
 
@@ -40,9 +44,8 @@ import { MealComponent } from './meal/meal.component';
     SeasonSummerComponent,
     SeasonAutomnComponent,
     InstructionComponent,
+    VegetableComponent,
     MealComponent
-
-
   ],
   imports: [
     BrowserModule,
