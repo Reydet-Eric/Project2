@@ -19,13 +19,13 @@
     margin-top: 5px;
    }
   
-  
+ 
   .container{
-    background-image: url("https://pixabay.com/get/g8564f6065ebc607414d216b5e4408995147368721d7c3cb95cae83932067eca785c6f61cc1c2a17a956f5355c24154912e0c6c19878c2683e15996b7c81a9123b74d9ad072859ec9f668dbe35cf6ff6d_640.jpg");
-    background-size: cover;
+    background-image: url("/assets/logo-cuisine.jpg");
+    background-size:cover;
     height: 200px;
     width: 50%;
-    color:white;
+ 
     font-size: 30px;
     position: relative;
     display:flex;
@@ -35,11 +35,11 @@
   }
   
   .container1{
-    background-image: url("https://pixabay.com/get/g8564f6065ebc607414d216b5e4408995147368721d7c3cb95cae83932067eca785c6f61cc1c2a17a956f5355c24154912e0c6c19878c2683e15996b7c81a9123b74d9ad072859ec9f668dbe35cf6ff6d_640.jpg");
+    background-image: url("/assets/logo-cuisine.jpg");    
     background-size: cover;
     height: 200px;
     width: 50%;
-    color:white;
+   
     font-size: 30px;
     position: relative;
     display:flex;
@@ -49,11 +49,11 @@
   }
   
   .container2{
-    background-image: url("https://pixabay.com/get/g8564f6065ebc607414d216b5e4408995147368721d7c3cb95cae83932067eca785c6f61cc1c2a17a956f5355c24154912e0c6c19878c2683e15996b7c81a9123b74d9ad072859ec9f668dbe35cf6ff6d_640.jpg");
-    background-size: cover;
+     background-image: url("/assets/logo-cuisine.jpg");
+     background-size: cover;
     height: 200px;
     width: 50%;
-    color:white;
+  
     font-size: 30px;
     position: relative;
     display:flex;
@@ -63,11 +63,11 @@
   }
   
   .container3{
-    background-image: url("https://pixabay.com/get/g8564f6065ebc607414d216b5e4408995147368721d7c3cb95cae83932067eca785c6f61cc1c2a17a956f5355c24154912e0c6c19878c2683e15996b7c81a9123b74d9ad072859ec9f668dbe35cf6ff6d_640.jpg");
+    background-image: url("/assets/logo-cuisine.jpg");    
     background-size: cover;
     height: 200px;
     width: 50%;
-    color:white;
+  
     font-size: 30px;
     position: relative;
     display:flex;
@@ -88,23 +88,11 @@
   
   
   
-   
+//  img{
+//    width: 150px;;
+//   height:100px; 
   
-  
-  
-  /* img {
-    max-width: 220px;
-    max-height: 150px;
-  } */
-  
-  
-   
-  
-   img{
-   width: 150px;;
-  height:100px; 
-  
-  }
-  .tuilephoto{
-    margin-top: 70%;
-  } 
+//   }
+//   .tuilephoto{
+//     margin-top: 70%;
+//   } 
