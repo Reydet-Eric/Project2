@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ServicerecetteService } from '../servicerecette.service';
-import { FormControl, FormArray, FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
+import { FormControl, FormArray, FormBuilder, FormGroup} from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
 
 @Component({
@@ -25,6 +25,7 @@ form : FormGroup;
 resultat: any
 meale : any
 list: any
+infosPlus: boolean = false
 
 veget = this.season.filter((fruits => {
   return fruits.mois.includes(1) || fruits.mois.includes(2) || fruits.mois.includes(12)  ;
@@ -51,4 +52,8 @@ onCheckboxChange(event: any){
   }
 }
 submit(){}
+affichBonus(){
+this.infosPlus = this.servicerecetteService.getBonus()
+this.infosPlus = !this.infosPlus
+}
 }
