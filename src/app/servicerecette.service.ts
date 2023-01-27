@@ -1,10 +1,11 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+
 @Injectable({
   providedIn: 'root'
 })
 export class ServicerecetteService {
-
+touterecette : any;
 // variable declarée //
 season: Array<any> = [
   {name:"eggplant",mois:[5,6,7,8,9],clipart:"../assets/cliparts/eggplant-clipart.svg",bonus:"Eggplant has antioxidants like vitamins A and C, which help protect your cells against damage. It's also high in natural plant chemicals called polyphenols, which may help cells do a better job of processing sugar if you have diabetes."},
@@ -37,11 +38,16 @@ bonus: boolean = false
 
  getPost(){
     return  this.http.get<any>(this.URL2);
-
+    // this.touterecette = this.http.get<any>(this.URL2);
     // subscribe(responseObjj => {
     //   console.log(responseObjj.meals, "response");
     //   this.mealss = responseObjj.meals;
     };
+
+
+    setRecette(recettes: any){
+      this.touterecette = recettes;
+    }
 
 getSeason(){
   return this.season
