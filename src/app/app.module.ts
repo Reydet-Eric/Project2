@@ -44,12 +44,8 @@ import { MealComponent } from './meal/meal.component';
     SeasonSummerComponent,
     SeasonAutomnComponent,
     InstructionComponent,
-
-    VegetableComponent
-
+    VegetableComponent,
     MealComponent
-
-
   ],
   imports: [
     BrowserModule,
