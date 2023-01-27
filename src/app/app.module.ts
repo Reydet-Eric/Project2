@@ -25,6 +25,7 @@ import { MealComponent } from './meal/meal.component';
 
 
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,13 +34,14 @@ import { MealComponent } from './meal/meal.component';
     MainComponent,
     RecetteComponent,
     HomeComponent,
-     SeasonComponent,
+    SeasonComponent,
     SeasonWinterComponent,
     SeasonSpringComponent,
     SeasonSummerComponent,
     SeasonAutomnComponent,
     InstructionComponent,
     MealComponent
+
 
   ],
   imports: [

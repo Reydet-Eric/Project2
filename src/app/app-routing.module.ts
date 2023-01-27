@@ -9,6 +9,7 @@ const routes: Routes = [
   {path:'season', component: SeasonComponent,},
   {path:'meal/:idMeal', component: MealComponent,}
 
+
 ];
 
 @NgModule({
