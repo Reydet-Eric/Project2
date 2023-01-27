@@ -20,6 +20,7 @@ import { SeasonSummerComponent } from './season-summer/season-summer.component';
 import { SeasonAutomnComponent } from './season-automn/season-automn.component';
 
 import { InstructionComponent } from './instruction/instruction.component';
+import { VegetableComponent } from './vegetable/vegetable.component';
 
 
 
@@ -37,7 +38,8 @@ import { InstructionComponent } from './instruction/instruction.component';
     SeasonSpringComponent,
     SeasonSummerComponent,
     SeasonAutomnComponent,
-    InstructionComponent
+    InstructionComponent,
+    VegetableComponent
 
   ],
   imports: [
