@@ -5,10 +5,10 @@
   }
 
 
-   .tuilephoto{
-     margin-top: 50%;
-     margin-bottom: 30%;
-   }
+  //  .tuilephoto{
+  //   //  margin-top: 50%;
+  //    margin-bottom: 30%;
+  //  }
 
   .positionphoto{
 
@@ -20,12 +20,13 @@
    }
 
   .container{
-    background-image: url("/assets/logo-cuisine.jpg");
+   
+    background-image: url("/assets/summer.png");
     background-size:cover;
     height: 200px;
     width: 50%;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
     position: relative;
     display:flex;
     align-items: center;
@@ -34,12 +35,13 @@
   }
 
   .container1{
-    background-image: url("/assets/logo-cuisine.jpg");    
+ 
+    background-image: url("/assets/autumn.png");    
     background-size: cover;
     height: 200px;
     width: 50%;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
     position: relative;
     display:flex;
     align-items: center;
@@ -48,12 +50,13 @@
   }
 
   .container2{
-     background-image: url("/assets/logo-cuisine.jpg");
+  
+     background-image: url("/assets/winter.png");
      background-size: cover;
     height: 200px;
     width: 50%;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
     position: relative;
     display:flex;
     align-items: center;
@@ -62,12 +65,13 @@
   }
 
   .container3{
-    background-image: url("/assets/logo-cuisine.jpg");    
+
+    background-image: url("/assets/spring.png");    
     background-size: cover;
     height: 200px;
     width: 50%;
     font-weight: bold;
-    font-size: 30px;
+    font-size: 25px;
     position: relative;
     display:flex;
     align-items: center;
@@ -76,42 +80,15 @@
   }
 
 
-  /* img {
-    max-width: 220px;
-    max-height: 150px;
-  } */
 
 
-
-
-   img{
-   width: 150px;;
-  height:100px;
-
-  }
+  
   .tuilephoto{
     margin-top: 20%;
   }
 
   
-  
-  
-  
-  
-  
+
   
   
    
-  
-  
-  
-  
-//  img{
-//    width: 150px;;
-//   height:100px; 
-  
-//   }
-//   .tuilephoto{
-//     margin-top: 70%;
-//   } 
-

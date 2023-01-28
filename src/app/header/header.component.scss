@@ -4,7 +4,7 @@ $menuHeight: 60px;
 .bloc1{
 
    padding:20px;
-    background-color: #103946;
+    // background-color: #103946;
 }
 
 
@@ -24,7 +24,8 @@ $menuHeight: 60px;
   background-color: #fff;
   padding: 10px;
   gap:10px;
-  
+  background: url('/assets/images.jpg');
+      background-size: cover;
 }
 
 .logo{
@@ -37,7 +38,7 @@ h1{
 
   display: flex;
   justify-content: center;
-  color:#fff;
+  // color:#fff;
   font-size:30px;
   margin:10px;
   padding:0;
@@ -111,7 +112,7 @@ h2{
       &.is-open {
         display: block;
         position: absolute;
-        top: 100px;
+        top: 126px;
         background: #fff;
         width: 100%;
       

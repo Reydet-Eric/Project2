@@ -2,30 +2,34 @@
 
   .contenu{
     display: inline;
-   justify-content: center;
+    justify-content: center;
     flex-wrap: wrap;
      margin-top: 40px;
   }
 
-// @import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
 
 
+// h1{
 
+//   display:flex;
+//   justify-content: center;
+// }
  .contenu .box{
     width: 100%;
     margin: 5%;
-    border: 20px solid #fff;
+    border: 5px solid #fff;
     box-shadow: 20px 15px 35px rgba(0,0,0, 0.8);
   }
 
 .contenu .box .imbox{
     // position: relative;
     width: 100%;
-    height: 300px;
+  
   }
 img{
 
-   width: 80%;
+   width: 100%;
 
   }
 
@@ -89,15 +93,14 @@ img{
 .bloc{
     display:flex;
     flex-wrap:wrap;
-
-
-
+    gap:20px;
 
 
 }
 .contenu{
 
-  width: 80%;
+  width: 90%;
+
 
 
 }
@@ -134,4 +137,5 @@ img{
     width: 250px;
   }
 }
+
 
