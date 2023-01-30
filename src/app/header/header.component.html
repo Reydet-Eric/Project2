@@ -14,11 +14,13 @@
   <li class="burger" (click)="toggleMenu()">
       <i class="material-icons">{{ isMenuOpen ? "X" : "=" }}</i>
   </li>
-  <li class="menu" [class.is-open]="isMenuOpen"> 
-    <a href="#" class="menu-item">Home</a>
+  <li class="menu" [class.is-open]="isMenuOpen">
+    <a routerLink="home" class="menu-item">Home</a>
     <a href="#" class="menu-item">About</a>
-    <a href="#" class="menu-item">Recipes</a>
-    <a href="#" class="menu-item">Seasons</a>
+
+    <a routerLink="season" class="menu-item">Recipes</a>
+ 
+
   </li>
 </ul>
 </nav>
