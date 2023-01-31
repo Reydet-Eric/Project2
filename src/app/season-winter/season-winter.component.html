@@ -6,14 +6,34 @@
     nuts/oilseeds, whole grains/legumes and ghee. Besides these, some spices also have anti-microbial properties that
     protect us from colds and infections. They also act to increase digestive enzymes and cellular metabolic function,
     and ensure complete assimilation of nutrients.</p>
-  <div class="collection">
-    <div *ngFor="let item of veget; let i=index">
-      <div class="veget" (click)="affichBonus()">
 
-        {{item.name}}
-        <img src="{{item.clipart}}" alt="clipart" width="100px" height="100px">
+    <div class="titre">
+      <h2>Vegetables: </h2>
+    </div>
+    <div class="collection">
+      <div class="veget" *ngFor="let item of veget; let i=index">
+        <div *ngIf="item.type=='vegetable'">
+          <div *ngIf="item.type=='fruit'" class="masque"></div>
+          <div>{{item.name}}</div>
+          <img src="{{item.clipart}}" alt="clipart" width="100px" height="100px">
+        </div>
       </div>
     </div>
-  </div>
-  <app-vegetable *ngIf="infosPlus"></app-vegetable>
-</div>
+
+    <div class="titre">
+      <h2>Fruits: </h2>
+    </div>
+    <div class="collection2">
+      <div class="veget" *ngFor="let item of veget; let i=index">
+        <div *ngIf="item.type=='fruit'">
+          <div>{{item.name}}</div>
+          <img src="{{item.clipart}}" alt="clipart" width="100px" height="100px">
+        </div>
+      </div>
+    </div>
+    </div>
+      <app-vegetable *ngIf="infosPlus" (close)="closeBonus()" [bonus]="item" ></app-vegetable>
+
+
+
+
