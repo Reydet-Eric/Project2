@@ -26,7 +26,13 @@ season: Array<any> = [
   {name:"apple",type:"fruit",mois:[1,2,3,4,8,9,10,11,12],clipart:"../assets/cliparts/apple-clipart.svg",bonus:"The apple concentrates valuable antioxidants in its peel and is therefore to be chosen organic because it is one of the most processed fruits."},
   {name:"strawberries",type:"fruit",mois:[5,6,7,8],clipart:"../assets/cliparts/strawberries-clipart.svg",bonus:""},
   {name:"raspberries",type:"fruit",mois:[6,7,8,9],clipart:"../assets/cliparts/raspberry-clipart.svg",bonus:""},
-  {name:"rhubarb",type:"fruit",mois:[4,5,6],clipart:"../assets/cliparts/rhubarb-clipart.svg",bonus:""}
+  {name:"rhubarb",type:"fruit",mois:[4,5,6],clipart:"../assets/cliparts/rhubarb-clipart.svg",bonus:""},
+  {name:"Clementine",type:"fruit",mois:[1,2,3,11,12],clipart:"../assets/cliparts/clémentine-fruit-saison.png",bonus:"Clementine  is very rich in vitamin C, which has an important antioxidant action and thus helps to protect our body from premature aging of cells."},
+  {name:"kiwi",type:"fruit",mois:[1,2,3,4,12],clipart:"../assets/cliparts/kiwi-fruit-saison.png",bonus:"The kiwi  is the vitamin C champion: 2 kiwis cover 100% of the daily vitamin C requirements for adults."},
+  {name:"pear",type:"fruit",mois:[1,2,3,9,10,11,12],clipart:"../assets/cliparts/poire-fruit-saison-1.png",bonus:"The pear, like the Conférence or the Comice, concentrates valuable antioxidants in its peel. Prefer organic pears because pesticides are also concentrated in the skin."},
+  {name:"pomelo",type:"fruit",mois:[4,5,6],clipart:"../assets/cliparts/pomelo-fruit-saison.png",bonus:"The pomelo , commonly called grapefruit wrongly, is rich in vitamin C. Pomelos from Corsica can be found in France."},
+  {name:"cherry",type:"fruit",mois:[6,7],clipart:"../assets/cliparts/cerise-fruit-saison-150x150-1.png",bonus:"Cherry is rich in catechins, very beneficial antioxidants that are also found in green tea."},
+  {name:"melon",type:"fruit",mois:[6,7,8,9],clipart:"../assets/cliparts/melon-fruit-saison.png",bonus:"Melon is rich in beta-carotene, an antioxidant that gives it its orange color. It also stimulates the production of serotonin, a neurotransmitter responsible for calming."}
   ]
 // BONUS  : variable pour un modal avec plus d'infos sur le fruits/legumes selectionnés
 bonus: boolean = false
