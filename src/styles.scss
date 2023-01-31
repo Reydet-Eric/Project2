@@ -1,5 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 @import url('https://fonts.googleapis.com/css2?family=Anek+Kannada:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anonymous+Pro&display=swap');
 
 *{
 
@@ -10,8 +12,12 @@
 }
 
 
-// body{
+h1{
 
-//     background: url('/assets/images.jpg');
-//     background-size: cover;
-// }
+    font-family: 'Dancing Script', cursive;
+}
+    
+
+h2{
+    font-family: 'Anonymous Pro', monospace;
+}

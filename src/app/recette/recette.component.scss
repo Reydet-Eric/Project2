@@ -1,14 +1,11 @@
 
-
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
   .contenu{
     display: inline;
     justify-content: center;
     flex-wrap: wrap;
      margin-top: 40px;
   }
-
-@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
-
 
 // h1{
 
@@ -122,12 +119,10 @@ img{
 }
 @media screen and  (min-width : 900px) {
   .contenu {
-    width: 40%;
+    width: 25%;
+    // width: 40%;
 
 }
-
-
-
   .bloc {
     // gap: 150px;
     gap: 10%;
