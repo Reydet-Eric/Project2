@@ -27,6 +27,12 @@ p{
 
 }
 
+.collection2{
+  display:flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-evenly ;
+}
 .veget{
 display: flex;
 flex-direction: column-reverse;
@@ -39,3 +45,6 @@ justify-content: center;
 .body{
   padding:10px;
 }
+.titre{
+  text-align: center;
+  }

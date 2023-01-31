@@ -2,7 +2,7 @@
 
 <div class="contenuList">
   <div class="ingredientTitre" >
-<h1>list of vegetables and fruits of season:</h1>
+<h1>Click on your favorite fruit/vegetable and generate a recipe</h1>
 
 
 <button (click)="submit()">Générer une recette</button>
@@ -13,9 +13,12 @@
 <section>
   <form [formGroup]="form" (ngSubmit)="submit()" novalidate>
        <div class="collection">
+
     <div class="veget" *ngFor="let item of veget; let i=index">
-           <input type="checkbox" formArrayName="selectedItems" [value]="item.name" (change)="onCheckboxChange($event)" />
+           <input type="radio" formArrayName="selectedItems" [value]="item.name" (change)="onCheckboxChange($event)" />
         {{item.name}}
+
+
         <img src="{{item.clipart}}" alt="clipart" width="50px" height="50px">
      </div>
     </div>
@@ -23,6 +26,6 @@
   <!-- {{form.value | json}} -->
 </section>
 
-
+    <!-- <button (click)="submit()">Générer une recette</button> -->
 <app-recette
 [searchText]="ingredient"></app-recette>
