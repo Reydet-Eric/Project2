@@ -1,14 +1,28 @@
 
 <h1>Fruits and Vegetables of Automn</h1>
 <p>So what should one be eating at this time of year? As the temperatures drop, we need to nourish and warm the body from the inside, to balance the yin and the yang. If we’re eating ‘cold’ foods, also known as yin foods, such as fruits, raw vegetables, salads and cold drinks, we’re overpowering the yin, leaving us feeling cold from the inside out and more prone to falling ill. Therefore, the colder months are all about eating the grounding and nourishing yang foods that are going to balance our hormones, strengthen our immune system, boost our energy and feel well all rounded.</p>
-       <div class="collection">
-    <div class="veget" *ngFor="let item of veget; let i=index">
 
-        {{item.name}}
-        <img src="{{item.clipart}}" alt="clipart" width="100px" height="100px">
-     </div>
+<div class="titre">
+  <h2>Vegetables: </h2>
+</div>
+<div class="collection">
+  <div class="veget" *ngFor="let item of veget; let i=index">
+    <div *ngIf="item.type=='vegetable'">
+      <div *ngIf="item.type=='fruit'" class="masque"></div>
+      <div>{{item.name}}</div>
+      <img src="{{item.clipart}}" alt="clipart" width="100px" height="100px">
     </div>
+  </div>
+</div>
 
-
-
-<br>
+<div class="titre">
+  <h2>Fruits: </h2>
+</div>
+<div class="collection2">
+  <div class="veget" *ngFor="let item of veget; let i=index">
+    <div *ngIf="item.type=='fruit'">
+      <div>{{item.name}}</div>
+      <img src="{{item.clipart}}" alt="clipart" width="100px" height="100px">
+    </div>
+  </div>
+</div>

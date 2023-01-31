@@ -26,6 +26,13 @@ p{
   justify-content: space-evenly;
 
 }
+
+.collection2{
+  display:flex;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  justify-content: space-evenly ;
+}
 .veget{
 display: flex;
 flex-direction: column-reverse;
@@ -48,3 +55,6 @@ h1{
   align-items: center;
   justify-content: center;
 }
+.titre{
+  text-align: center;
+  }
