@@ -13,7 +13,7 @@
 
   <!-- [routerLink]="['season']" [queryParams]="{debug: meals[0].strMeal}" -->
   <!-- routerLink="/detail/{{hero.id}}" -->
-<div [routerLink]="['/meal', meal.idMeal]" [queryParams]="{idMeal:  meal.idMeal }"  class="contenu" *ngFor="let meal of meals |filter:searchText  ">
+<div [routerLink]="['/instruction', meal.idMeal]" [queryParams]="{idMeal:  meal.idMeal }"  class="contenu" *ngFor="let meal of meals |filter:searchText  ">
     <div class="box">
       <!-- <div class="imbox"> -->
         <h1>{{meal.strMeal}}</h1>

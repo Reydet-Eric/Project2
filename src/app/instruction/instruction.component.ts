@@ -1,5 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
+
+import { ActivatedRoute } from '@angular/router';
+import { ServicerecetteService } from '../servicerecette.service';
+
 // import { getLocaleMonthNames } from '@angular/common';
 
 @Component({
@@ -10,12 +14,18 @@ import { HttpClient } from '@angular/common/http';
 export class InstructionComponent implements OnInit{
 
 
-  //-----------------DONNEE API-------------------//
+  // -----------------DONNEE API-------------------//
 
 URL2 = 'https://www.themealdb.com/api/json/v1/1/search.php?s&count=20';
 
 meals: any = [];
 strMeal: any;
+repas:any;
+meal!: any;
+mealId:any ;
+
+
+
 
 
 strMeasure1: any;
@@ -62,14 +72,34 @@ strIngredient20: any;
 
 strMealThumb: any;
 
-constructor(public http: HttpClient){}
+// constructor(public http: HttpClient){}
+
+// ngOnInit(): void {
+//   this.http.get<any>(this.URL2).subscribe(response => {
+    
+//     this.meals = response.meals;
+
+    
+//   });
+
+
+
+// }
+
+constructor(private activatedRoute: ActivatedRoute,private service: ServicerecetteService,public http: HttpClient){}
+
 
 ngOnInit(): void {
-  this.http.get<any>(this.URL2).subscribe(response => {
-    
-    this.meals = response.meals;
-
-    
+ this.mealId= this.activatedRoute.snapshot.params['idMeal'];
+// this.meal= this.service.touterecette.find((x: any) => x.idMeal === this.mealId);
+console.log("alioune ", this.mealId);
+fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${this.mealId}`)
+.then(data => data.json())
+  .then(mealFromAPI => { // { meals: [ {strMeal: "corba"} ] }
+    const { meals } = mealFromAPI; // [ {strMeal: "corba"} ]
+    console.log("&&&&&&", meals[0]); // {strMeal: "corba"} 
+    this.meal = meals[0];
+    // this.meal = mealFromAPI.meals[0]: Ceci est l'équivalent de la déconstruction plus haut
   });
-
-}}
+}
+}
