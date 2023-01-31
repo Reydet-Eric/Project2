@@ -37,8 +37,13 @@ border-radius: 5px;
 padding:10px;
 align-items: center;
 justify-content: space-evenly;
+
 }
 
+.masque{
+  display:none;
+  width:0;
+}
 .body{
   padding:10px;
 }
