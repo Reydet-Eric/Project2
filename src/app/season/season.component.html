@@ -14,6 +14,7 @@
   <form [formGroup]="form" (ngSubmit)="submit()" novalidate>
        <div class="collection">
 <<<<<<< HEAD
+<<<<<<< HEAD
     <div class="veget" *ngFor="let item of veget; let i=index"><h4>{{item.name}}</h4>
            <input type="checkbox" formArrayName="selectedItems" [value]="item.name" (change)="onCheckboxChange($event)" />
         
@@ -22,6 +23,14 @@
            <input type="radio" formArrayName="selectedItems" [value]="item.name" (change)="onCheckboxChange($event)" />
         {{item.name}}
 >>>>>>> alicia
+=======
+
+    <div class="veget" *ngFor="let item of veget; let i=index">
+           <input type="radio" formArrayName="selectedItems" [value]="item.name" (change)="onCheckboxChange($event)" />
+        {{item.name}}
+
+
+>>>>>>> 24edbaad40ac51853528ee3e11c012696aca2f5b
         <img src="{{item.clipart}}" alt="clipart" width="50px" height="50px">
      </div>
     </div>
