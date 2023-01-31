@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
 import { ServicerecetteService } from '../servicerecette.service';
 import { FormControl, FormArray, FormBuilder, FormGroup} from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
+
 
 @Component({
   selector: 'app-season-winter',
@@ -9,6 +10,15 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./season-winter.component.scss']
 })
 export class SeasonWinterComponent implements OnInit{
+
+item= {
+  name:"",mois:[],clipart:"",bonus:""
+}
+  indexIci: number = 0
+  index = 0
+
+@Input() bonus:any | undefined
+@Output() displayBonus: EventEmitter<any> = new EventEmitter<any>()
 
 constructor(public servicerecetteService: ServicerecetteService, fb: FormBuilder, public http:HttpClient){
 
@@ -27,12 +37,14 @@ meale : any
 list: any
 infosPlus: boolean = false
 
+
 veget = this.season.filter((fruits => {
   return fruits.mois.includes(1) || fruits.mois.includes(2) || fruits.mois.includes(12)  ;
 }))
 
 ngOnInit():void {
   this.selectedItemsSeason();
+  this.indexIci=this.index
 }
 
 
@@ -51,9 +63,16 @@ onCheckboxChange(event: any){
 
   }
 }
-submit(){}
-affichBonus(){
+
+affichBonus(item: string){
 this.infosPlus = this.servicerecetteService.getBonus()
 this.infosPlus = !this.infosPlus
+this.displayBonus.emit(item)
+// this.vegeta=item
+
+}
+
+closeBonus(){
+  this.infosPlus = !this.infosPlus
 }
 }
