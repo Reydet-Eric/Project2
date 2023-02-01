@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { ServicerecetteService } from '../servicerecette.service';
 import { FormControl, FormArray, FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';
@@ -9,6 +9,8 @@ import { HttpClient } from '@angular/common/http';
   styleUrls: ['./season-summer.component.scss']
 })
 export class SeasonSummerComponent implements OnInit{
+
+  @Output() displayBonus: EventEmitter<any> = new EventEmitter<any>()
 
   constructor(public servicerecetteService: ServicerecetteService, fb: FormBuilder, public http:HttpClient){
 
@@ -25,6 +27,7 @@ export class SeasonSummerComponent implements OnInit{
   resultat: any
   meale : any
   list: any
+  infosPlus: boolean = false
 
   veget = this.season.filter((fruits => {
     return fruits.mois.includes(6) || fruits.mois.includes(7) || fruits.mois.includes(8)  ;
@@ -50,5 +53,17 @@ export class SeasonSummerComponent implements OnInit{
 
     }
   }
-  submit(){}
+affichBonus(index: number,veget: any){
+  console.log(index);
+this.servicerecetteService.getChangeIndex(index)
+// this.infosPlus = this.servicerecetteService.getBonus()
+this.infosPlus = !this.infosPlus
+this.displayBonus.emit(index)
+this.servicerecetteService.getChangeList(veget)
+}
+
+closeBonus(){
+  this.infosPlus = !this.infosPlus
+  // this.infosPlus = this.servicerecetteService.getBonus()
+}
   }

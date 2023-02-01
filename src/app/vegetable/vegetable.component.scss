@@ -1,11 +1,16 @@
 .details{
 display:flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
 height: 400px;
 width: 300px;
 border: solid 1px;
 position: fixed;
 top:25%;
-left:20%;
+left:25%;
 z-index: 100;
-background-color: azure;
+background-color: white;
+padding:20px;
+border-radius: 10px;
 }
