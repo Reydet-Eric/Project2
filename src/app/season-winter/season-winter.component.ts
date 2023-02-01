@@ -71,13 +71,10 @@ this.servicerecetteService.getChangeIndex(index)
 this.infosPlus = !this.infosPlus
 this.displayBonus.emit(index)
 this.servicerecetteService.getChangeList(veget)
-
-// this.vegeta=item
-
 }
 
 closeBonus(){
   this.infosPlus = !this.infosPlus
-  this.infosPlus = this.servicerecetteService.getBonus()
+  // this.infosPlus = this.servicerecetteService.getBonus()
 }
 }
