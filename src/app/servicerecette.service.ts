@@ -36,6 +36,8 @@ season: Array<any> = [
   ]
 // BONUS  : variable pour un modal avec plus d'infos sur le fruits/legumes selectionnés
 bonus: boolean = false
+indexChoix = 0
+list = []
 
 
 // URL DE L'API //
@@ -63,6 +65,23 @@ getBonus(){
 }
 getNoBonus(){
   this.bonus=!this.bonus
+}
+
+getIndex(){
+  return this.indexChoix
+}
+
+getChangeIndex(index:number){
+  this.indexChoix= index
+}
+
+getList(){
+  return this.list
+}
+
+getChangeList(tableau: []){
+  this.list=tableau
+
 }
   }
 
