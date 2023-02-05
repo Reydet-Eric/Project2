@@ -3,13 +3,13 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule} from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { MainComponent } from './main/main.component';
+
 import { SeasonComponent } from './season/season.component';
 import { RecetteComponent } from './recette/recette.component';
 import { HomeComponent } from './home/home.component';
@@ -21,11 +21,6 @@ import { SeasonAutomnComponent } from './season-automn/season-automn.component';
 
 import { InstructionComponent } from './instruction/instruction.component';
 import { VegetableComponent } from './vegetable/vegetable.component';
-import { MealComponent } from './meal/meal.component';
-
-
-
-
 
 
 @NgModule({
@@ -33,7 +28,6 @@ import { MealComponent } from './meal/meal.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    MainComponent,
     RecetteComponent,
     HomeComponent,
     SeasonComponent,
@@ -43,7 +37,7 @@ import { MealComponent } from './meal/meal.component';
     SeasonAutomnComponent,
     InstructionComponent,
     VegetableComponent,
-    MealComponent
+   
   ],
 
   imports: [
@@ -52,11 +46,10 @@ import { MealComponent } from './meal/meal.component';
     FormsModule,
     HttpClientModule,
     Ng2SearchPipeModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
 
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-
-export class AppModule{}
+export class AppModule {}

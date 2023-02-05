@@ -23,9 +23,9 @@ ngOnInit(): void {
 
 retour(){
   this.serviceRecette.getNoBonus()
-console.log("retour")
-console.log(this.serviceRecette.getBonus())
-this.bonusVegetable=this.serviceRecette.getBonus()
+  console.log("retour")
+  console.log(this.serviceRecette.getBonus())
+  this.bonusVegetable=this.serviceRecette.getBonus()
    this.close.emit()
 }
 }

@@ -23,11 +23,6 @@ strMeal: any;
 repas:any;
 meal!: any;
 mealId:any ;
-
-
-
-
-
 strMeasure1: any;
 strMeasure2: any;
 strMeasure3: any;
