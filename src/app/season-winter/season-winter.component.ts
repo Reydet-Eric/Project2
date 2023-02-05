@@ -49,7 +49,7 @@ ngOnInit():void {
 
 
 selectedItemsSeason() {
-  this.selectedItemsList = this.veget.filter((value, index) => {
+  this.selectedItemsList = this.veget.filter((value: any, index: any) => {
   });
 }
 
@@ -64,15 +64,17 @@ onCheckboxChange(event: any){
   }
 }
 
-affichBonus(item: string){
-this.infosPlus = this.servicerecetteService.getBonus()
+affichBonus(index: number,veget: any){
+  console.log(index);
+this.servicerecetteService.getChangeIndex(index)
+// this.infosPlus = this.servicerecetteService.getBonus()
 this.infosPlus = !this.infosPlus
-this.displayBonus.emit(item)
-// this.vegeta=item
-
+this.displayBonus.emit(index)
+this.servicerecetteService.getChangeList(veget)
 }
 
 closeBonus(){
   this.infosPlus = !this.infosPlus
+  // this.infosPlus = this.servicerecetteService.getBonus()
 }
 }

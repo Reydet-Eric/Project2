@@ -1,5 +1,4 @@
 *{
-
   margin:0;
   padding:0;
 }
@@ -13,7 +12,11 @@ margin: 10px;
 
 }
 
+
+
+
 .container{
+
 
 background-image: url("/assets/summer.png");
 background-size:cover;
@@ -27,7 +30,9 @@ align-items: center;
 justify-content: center;
 border-radius: 5px;
 
+
 }
+
 
 .container1{
 
@@ -92,15 +97,11 @@ border-radius: 5px;
   
 }
 
-// .tuilephoto{
-// margin-top: 10%;
-// margin-bottom: 20%;
-// }
-
-
 @media (min-width: 768px){
-.positionphoto{
 
+
+
+.positionphoto{
 
   display: flex;
   justify-content: center;
@@ -110,7 +111,10 @@ border-radius: 5px;
 
 .container{
 
+
   background-image: url("/assets/summer.png");
+
+
   background-size:cover;
   height: 200px;
   width: 50%;
@@ -155,7 +159,9 @@ border-radius: 5px;
 
 .container3{
 
+
   background-image: url("/assets/spring.png");
+
   background-size: cover;
   height: 200px;
   width: 50%;
@@ -166,14 +172,6 @@ border-radius: 5px;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
-}
-
-
-// .tuilephoto{
-//   margin-top: 10%;
-//   margin-bottom: 20%;
-// }
-
 }
 
 
@@ -274,7 +272,9 @@ border-radius: 5px;
 
   .container{
 
+
     background-image: url("/assets/summer.png");
+
     background-size:cover;
     height: 270px;
     width: 20%;
@@ -288,8 +288,39 @@ border-radius: 5px;
   }
   
   .container1{
-  
+
     background-image: url("/assets/autumn.png");
+
+    background-size: cover;
+    height: 400px;
+    width: 50%;
+    font-weight: bold;
+    font-size: 25px;
+    position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  }
+
+  .container2{
+
+     background-image: url("/assets/winter.png");
+     background-size: cover;
+    height: 400px;
+    width: 50%;
+    font-weight: bold;
+    font-size: 25px;
+    position: relative;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+  }
+
+  .container3{
+
+ background-image: url("/assets/spring.png");
     background-size: cover;
     height: 270px;
     width: 20%;
@@ -301,7 +332,7 @@ border-radius: 5px;
     justify-content: center;
     border-radius: 5px;
   }
-  
+
   
 .container2{
 
@@ -331,6 +362,8 @@ display:flex;
 align-items: center;
 justify-content: center;
 border-radius: 5px;
+
+
 }
 
 
