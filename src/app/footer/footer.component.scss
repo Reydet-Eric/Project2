@@ -1,11 +1,23 @@
+
+* {
+  margin:0;
+  padding:0;
+}
+
+
+
 .footer-basic {
   margin-top: 15px;
   padding: 10px 0;
   text-align: center;
   font-size: 25px;
   padding-bottom: 25px;
-  background-color: burlywood;
-}
+  background-color: burlywood; 
+   padding:40px 0;
+    background-color:#FAF0E6;
+    color:#4b4c4d;
+  }
+
 
 .item {
   width: 100px;
@@ -17,6 +29,7 @@
 
 .footer-basic ul a:hover {
   opacity: 1;
+}
     padding:40px 0;
     background-color:#FAF0E6;
     color:#4b4c4d;
@@ -74,7 +87,6 @@
     font-size:13px;
     color:#aaa;
     margin-bottom:0;
-  }
 
 .item {
   width: 100px;
