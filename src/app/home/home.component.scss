@@ -101,6 +101,7 @@ border-radius: 5px;
 @media (min-width: 768px){
 .positionphoto{
 
+.positionphoto{
 
   display: flex;
   justify-content: center;
@@ -303,7 +304,7 @@ border-radius: 5px;
   }
   
   
-.container2{
+  .container2{
 
 background-image: url("/assets/winter.png");
 background-size: cover;
@@ -318,21 +319,21 @@ justify-content: center;
 border-radius: 5px;
 }
 
-.container3{
+  .container3{
 
-background-image: url("/assets/spring.png");
-background-size: cover;
-height: 270px;
-width: 20%;
-font-weight: bold;
-font-size: 25px;
-position: relative;
-display:flex;
-align-items: center;
-justify-content: center;
-border-radius: 5px;
+  background-image: url("/assets/spring.png");
+  background-size: cover;
+  height: 270px;
+  width: 20%;
+  font-weight: bold;
+  font-size: 25px;
+  position: relative;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
 }
-
+}
 
 
 }
