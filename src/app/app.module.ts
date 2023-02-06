@@ -3,7 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { Ng2SearchPipeModule } from 'ng2-search-filter';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule} from '@angular/common/http'
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,10 +20,6 @@ import { SeasonAutomnComponent } from './season-automn/season-automn.component';
 
 import { InstructionComponent } from './instruction/instruction.component';
 import { VegetableComponent } from './vegetable/vegetable.component';
-
-
-
-
 
 
 @NgModule({
@@ -48,11 +44,10 @@ import { VegetableComponent } from './vegetable/vegetable.component';
     FormsModule,
     HttpClientModule,
     Ng2SearchPipeModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
 
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-
-export class AppModule{}
+export class AppModule {}
