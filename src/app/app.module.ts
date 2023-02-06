@@ -9,7 +9,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-import { MainComponent } from './main/main.component';
 import { SeasonComponent } from './season/season.component';
 import { RecetteComponent } from './recette/recette.component';
 import { HomeComponent } from './home/home.component';
@@ -21,7 +20,6 @@ import { SeasonAutomnComponent } from './season-automn/season-automn.component';
 
 import { InstructionComponent } from './instruction/instruction.component';
 import { VegetableComponent } from './vegetable/vegetable.component';
-import { MealComponent } from './meal/meal.component';
 
 
 
@@ -33,7 +31,6 @@ import { MealComponent } from './meal/meal.component';
     AppComponent,
     HeaderComponent,
     FooterComponent,
-    MainComponent,
     RecetteComponent,
     HomeComponent,
     SeasonComponent,
@@ -43,7 +40,6 @@ import { MealComponent } from './meal/meal.component';
     SeasonAutomnComponent,
     InstructionComponent,
     VegetableComponent,
-    MealComponent
   ],
 
   imports: [
