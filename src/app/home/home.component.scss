@@ -1,24 +1,402 @@
-* {
-  margin: 0;
-  padding: 0;
+// * {
+//   margin: 0;
+//   padding: 0;
+// }
+
+
+
+// .positionphoto{
+
+// display: flex;
+// justify-content: center;
+// gap: 5px;
+// margin: 10px;
+
+// }
+
+
+
+
+// .container1{
+
+// background-image: url("/assets/autumn.png");
+// background-size: cover;
+// height: 200px;
+// width: 50%;
+// font-weight: bold;
+// font-size: 25px;
+// position: relative;
+// display:flex;
+// align-items: center;
+// justify-content: center;
+// border-radius: 5px;
+// }
+
+// .container2{
+
+//  background-image: url("/assets/winter.png");
+//  background-size: cover;
+// height: 200px;
+// width: 50%;
+// font-weight: bold;
+// font-size: 25px;
+// position: relative;
+// display:flex;
+// align-items: center;
+// justify-content: center;
+// border-radius: 5px;
+// }
+
+// .container3{
+
+// background-image: url("/assets/spring.png");
+// background-size: cover;
+// height: 200px;
+// width: 50%;
+// font-weight: bold;
+// font-size: 25px;
+// position: relative;
+// display:flex;
+// align-items: center;
+// justify-content: center;
+// border-radius: 5px;
+// }
+
+// .overlay{
+
+//   font-family: 'Dancing Script', cursive;
+//   font-size: 40px;
+//   background-color: antiquewhite;
+//   opacity:65%;
+//   border-radius: 40%;
+//   padding:5px;
+// }
+
+
+// .overlay:hover{
+
+//   color: white;
+//   background-color: black;
+//   padding:10px;
+  
+// }
+
+// @media (min-width: 768px){
+
+
+
+// .positionphoto{
+
+
+//   display: flex;
+//   justify-content: center;
+//   gap: 5px;
+//   margin: 10px;
+// }
+
+// .tuilephoto {
+//   width: auto;
+// }
+
+// .container {
+//   background-image: url("/assets/summer.png");
+//   background-size: cover;
+//   height: 200px;
+//   width: 50%;
+//   font-weight: bold;
+//   font-size: 25px;
+//   position: relative;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   border-radius: 5px;
+// }
+
+// .container1 {
+//   background-image: url("/assets/autumn.png");
+//   background-size: cover;
+//   height: 200px;
+//   width: 50%;
+//   font-weight: bold;
+//   font-size: 25px;
+//   position: relative;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   border-radius: 5px;
+// }
+
+// .container2 {
+//   background-image: url("/assets/winter.png");
+//   background-size: cover;
+//   height: 200px;
+//   width: 50%;
+//   font-weight: bold;
+//   font-size: 25px;
+//   position: relative;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   border-radius: 5px;
+// }
+
+// .container3 {
+//   background-image: url("/assets/spring.png");
+//   background-size: cover;
+//   height: 200px;
+//   width: 50%;
+//   font-weight: bold;
+//   font-size: 25px;
+//   position: relative;
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   border-radius: 5px;
+// }
+
+// .overlay {
+//   font-family: "Dancing Script", cursive;
+//   font-size: 40px;
+//   background-color: antiquewhite;
+//   opacity: 65%;
+//   border-radius: 40%;
+//   padding: 5px;
+// }
+
+// .overlay:hover {
+//   color: white;
+//   background-color: black;
+//   padding: 10px;
+// }
+
+// @media (min-width: 768px) {
+//   .positionphoto {
+//     display: flex;
+//     justify-content: center;
+//     gap: 5px;
+//     margin: 5px;
+//   }
+
+//   .container {
+//     background-image: url("/assets/summer.png");
+//     background-size: cover;
+//     height: 200px;
+//     width: 50%;
+//     font-weight: bold;
+//     font-size: 25px;
+//     position: relative;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     border-radius: 5px;
+//   }
+
+//   .container1 {
+//     background-image: url("/assets/autumn.png");
+//     background-size: cover;
+//     height: 200px;
+//     width: 50%;
+//     font-weight: bold;
+//     font-size: 25px;
+//     position: relative;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     border-radius: 5px;
+//   }
+
+//   .container2 {
+//     background-image: url("/assets/winter.png");
+//     background-size: cover;
+//     height: 200px;
+//     width: 50%;
+//     font-weight: bold;
+//     font-size: 25px;
+//     position: relative;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     border-radius: 5px;
+//   }
+
+//   .container3 {
+//     background-image: url("/assets/spring.png");
+//     background-size: cover;
+//     height: 200px;
+//     width: 50%;
+//     font-weight: bold;
+//     font-size: 25px;
+//     position: relative;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+//     border-radius: 5px;
+//   }
+
+//   @media (min-width: 820px) {
+//     .tuilephoto {
+//       margin-top: 10%;
+//       margin-bottom: 10%;
+//     }
+
+//     .positionphoto {
+//       display: flex;
+//       justify-content: center;
+//       gap: 5px;
+//     }
+
+//     .container {
+//       background-image: url("/assets/summer.png");
+//       background-size: cover;
+//       height: 450px;
+//       width: 50%;
+//       font-weight: bold;
+//       font-size: 25px;
+//       position: relative;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       border-radius: 5px;
+//     }
+
+//     .container1 {
+//       background-image: url("/assets/autumn.png");
+//       background-size: cover;
+//       height: 450px;
+//       width: 50%;
+//       font-weight: bold;
+//       font-size: 25px;
+//       position: relative;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       border-radius: 5px;
+//     }
+
+//     .container2 {
+//       background-image: url("/assets/winter.png");
+//       background-size: cover;
+//       height: 450px;
+//       width: 50%;
+//       font-weight: bold;
+//       font-size: 25px;
+//       position: relative;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       border-radius: 5px;
+//     }
+
+//     .container3 {
+//       background-image: url("/assets/spring.png");
+//       background-size: cover;
+//       height: 450px;
+//       width: 50%;
+//       font-weight: bold;
+//       font-size: 25px;
+//       position: relative;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       border-radius: 5px;
+//     }
+
+//     .overlay {
+//       font-family: "Dancing Script", cursive;
+//       font-size: 60px;
+//       background-color: antiquewhite;
+//       opacity: 65%;
+//     }
+//   }
+
+//   @media (min-width: 1280px) {
+//     .container {
+//       background-image: url("/assets/summer.png");
+//       background-size: cover;
+//       height: 340px;
+//       width: 25%;
+//       font-weight: bold;
+//       font-size: 25px;
+//       position: relative;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       border-radius: 5px;
+//     }
+
+//     .container1 {
+//       background-image: url("/assets/autumn.png");
+//       background-size: cover;
+//       height: 340px;
+//       width: 25%;
+//       font-weight: bold;
+//       font-size: 25px;
+//       position: relative;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       border-radius: 5px;
+//     }
+
+//     .container2 {
+//       background-image: url("/assets/winter.png");
+//       background-size: cover;
+//       height: 340px;
+//       width: 25%;
+//       font-weight: bold;
+//       font-size: 25px;
+//       position: relative;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       border-radius: 5px;
+//     }
+
+//     .container3 {
+//       background-image: url("/assets/spring.png");
+//       background-size: cover;
+//       height: 340px;
+//       width: 25%;
+//       font-weight: bold;
+//       font-size: 25px;
+//       position: relative;
+//       display: flex;
+//       align-items: center;
+//       justify-content: center;
+//       border-radius: 5px;
+//     }
+//   }
+// }
+// }
+
+
+*{
+  margin:0;
+  padding:0;
 }
-
-
-
 .positionphoto{
-
 display: flex;
 justify-content: center;
 gap: 5px;
 margin: 10px;
-
 }
-
-
-
-
+.tuilephoto{
+  width:auto;
+}
+.container{
+background-image: url("/assets/summer.png");
+background-size:cover;
+height: 200px;
+width: 50%;
+font-weight: bold;
+font-size: 25px;
+position: relative;
+display:flex;
+align-items: center;
+justify-content: center;
+border-radius: 5px;
+}
 .container1{
-
 background-image: url("/assets/autumn.png");
 background-size: cover;
 height: 200px;
@@ -31,9 +409,7 @@ align-items: center;
 justify-content: center;
 border-radius: 5px;
 }
-
 .container2{
-
  background-image: url("/assets/winter.png");
  background-size: cover;
 height: 200px;
@@ -46,9 +422,7 @@ align-items: center;
 justify-content: center;
 border-radius: 5px;
 }
-
 .container3{
-
 background-image: url("/assets/spring.png");
 background-size: cover;
 height: 200px;
@@ -61,9 +435,7 @@ align-items: center;
 justify-content: center;
 border-radius: 5px;
 }
-
 .overlay{
-
   font-family: 'Dancing Script', cursive;
   font-size: 40px;
   background-color: antiquewhite;
@@ -71,48 +443,32 @@ border-radius: 5px;
   border-radius: 40%;
   padding:5px;
 }
-
-
 .overlay:hover{
-
   color: white;
   background-color: black;
   padding:10px;
-  
 }
-
 @media (min-width: 768px){
-
-
-
 .positionphoto{
-
-
   display: flex;
   justify-content: center;
   gap: 5px;
-  margin: 10px;
-}
-
-.tuilephoto {
-  width: auto;
-}
-
-.container {
+  margin: 5px;
+ }
+.container{
   background-image: url("/assets/summer.png");
-  background-size: cover;
+  background-size:cover;
   height: 200px;
   width: 50%;
   font-weight: bold;
   font-size: 25px;
   position: relative;
-  display: flex;
+  display:flex;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
 }
-
-.container1 {
+.container1{
   background-image: url("/assets/autumn.png");
   background-size: cover;
   height: 200px;
@@ -120,27 +476,25 @@ border-radius: 5px;
   font-weight: bold;
   font-size: 25px;
   position: relative;
-  display: flex;
+  display:flex;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
 }
-
-.container2 {
-  background-image: url("/assets/winter.png");
-  background-size: cover;
+.container2{
+   background-image: url("/assets/winter.png");
+   background-size: cover;
   height: 200px;
   width: 50%;
   font-weight: bold;
   font-size: 25px;
   position: relative;
-  display: flex;
+  display:flex;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
 }
-
-.container3 {
+.container3{
   background-image: url("/assets/spring.png");
   background-size: cover;
   height: 200px;
@@ -148,223 +502,133 @@ border-radius: 5px;
   font-weight: bold;
   font-size: 25px;
   position: relative;
-  display: flex;
+  display:flex;
   align-items: center;
   justify-content: center;
   border-radius: 5px;
 }
-
-.overlay {
-  font-family: "Dancing Script", cursive;
-  font-size: 40px;
-  background-color: antiquewhite;
-  opacity: 65%;
-  border-radius: 40%;
-  padding: 5px;
-}
-
-.overlay:hover {
-  color: white;
-  background-color: black;
-  padding: 10px;
-}
-
-@media (min-width: 768px) {
-  .positionphoto {
+@media (min-width: 820px){
+  .tuilephoto{
+    margin-top: 10%;
+    margin-bottom: 10%;
+  }
+  .positionphoto{
     display: flex;
     justify-content: center;
     gap: 5px;
-    margin: 5px;
-  }
-
-  .container {
+    // margin: 10px;
+    }
+    .container{
+      background-image: url("/assets/summer.png");
+      background-size:cover;
+      height: 450px;
+      width: 50%;
+      font-weight: bold;
+      font-size: 25px;
+      position: relative;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+    }
+    .container1{
+      background-image: url("/assets/autumn.png");
+      background-size: cover;
+      height: 450px;
+      width: 50%;
+      font-weight: bold;
+      font-size: 25px;
+      position: relative;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+    }
+.container2{
+  background-image: url("/assets/winter.png");
+  background-size: cover;
+ height: 450px;
+ width: 50%;
+ font-weight: bold;
+ font-size: 25px;
+ position: relative;
+ display:flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 5px;
+}
+.container3{
+ background-image: url("/assets/spring.png");
+ background-size: cover;
+ height: 450px;
+ width: 50%;
+ font-weight: bold;
+ font-size: 25px;
+ position: relative;
+ display:flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 5px;
+}
+.overlay{
+  font-family: 'Dancing Script', cursive;
+  font-size: 60px;
+  background-color: antiquewhite;
+  opacity:65%;
+}
+}
+@media (min-width: 1280px){
+  .container{
     background-image: url("/assets/summer.png");
-    background-size: cover;
-    height: 200px;
-    width: 50%;
+    background-size:cover;
+    height: 340px;
+    width: 26%;
     font-weight: bold;
     font-size: 25px;
     position: relative;
-    display: flex;
+    display:flex;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
   }
-
-  .container1 {
+  .container1{
     background-image: url("/assets/autumn.png");
     background-size: cover;
-    height: 200px;
-    width: 50%;
+    height: 340px;
+    width: 26%;
     font-weight: bold;
     font-size: 25px;
     position: relative;
-    display: flex;
+    display:flex;
     align-items: center;
     justify-content: center;
     border-radius: 5px;
   }
-
-  .container2 {
-    background-image: url("/assets/winter.png");
-    background-size: cover;
-    height: 200px;
-    width: 50%;
-    font-weight: bold;
-    font-size: 25px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-  }
-
-  .container3 {
-    background-image: url("/assets/spring.png");
-    background-size: cover;
-    height: 200px;
-    width: 50%;
-    font-weight: bold;
-    font-size: 25px;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-  }
-
-  @media (min-width: 820px) {
-    .tuilephoto {
-      margin-top: 10%;
-      margin-bottom: 10%;
-    }
-
-    .positionphoto {
-      display: flex;
-      justify-content: center;
-      gap: 5px;
-    }
-
-    .container {
-      background-image: url("/assets/summer.png");
-      background-size: cover;
-      height: 450px;
-      width: 50%;
-      font-weight: bold;
-      font-size: 25px;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 5px;
-    }
-
-    .container1 {
-      background-image: url("/assets/autumn.png");
-      background-size: cover;
-      height: 450px;
-      width: 50%;
-      font-weight: bold;
-      font-size: 25px;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 5px;
-    }
-
-    .container2 {
-      background-image: url("/assets/winter.png");
-      background-size: cover;
-      height: 450px;
-      width: 50%;
-      font-weight: bold;
-      font-size: 25px;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 5px;
-    }
-
-    .container3 {
-      background-image: url("/assets/spring.png");
-      background-size: cover;
-      height: 450px;
-      width: 50%;
-      font-weight: bold;
-      font-size: 25px;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 5px;
-    }
-
-    .overlay {
-      font-family: "Dancing Script", cursive;
-      font-size: 60px;
-      background-color: antiquewhite;
-      opacity: 65%;
-    }
-  }
-
-  @media (min-width: 1280px) {
-    .container {
-      background-image: url("/assets/summer.png");
-      background-size: cover;
-      height: 340px;
-      width: 25%;
-      font-weight: bold;
-      font-size: 25px;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 5px;
-    }
-
-    .container1 {
-      background-image: url("/assets/autumn.png");
-      background-size: cover;
-      height: 340px;
-      width: 25%;
-      font-weight: bold;
-      font-size: 25px;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 5px;
-    }
-
-    .container2 {
-      background-image: url("/assets/winter.png");
-      background-size: cover;
-      height: 340px;
-      width: 25%;
-      font-weight: bold;
-      font-size: 25px;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 5px;
-    }
-
-    .container3 {
-      background-image: url("/assets/spring.png");
-      background-size: cover;
-      height: 340px;
-      width: 25%;
-      font-weight: bold;
-      font-size: 25px;
-      position: relative;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 5px;
-    }
-  }
+  .container2{
+background-image: url("/assets/winter.png");
+background-size: cover;
+height: 340px;
+width: 26%;
+font-weight: bold;
+font-size: 25px;
+position: relative;
+display:flex;
+align-items: center;
+justify-content: center;
+border-radius: 5px;
+}
+  .container3{
+  background-image: url("/assets/spring.png");
+  background-size: cover;
+  height: 340px;
+  width: 26%;
+  font-weight: bold;
+  font-size: 25px;
+  position: relative;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+}
 }
 }

@@ -89,9 +89,9 @@ getChangeList(tableau: []){
 
 
 now:any = new Date();
-  month = this.now.getMonth() + 1;
-  day = this.now.getDate();
-  // urlsaison:string='';
+month = this.now.getMonth() + 1;
+day = this.now.getDate();
+
 
   getCurrentSeason():any {
 
@@ -122,6 +122,7 @@ now:any = new Date();
     return this.day < 22 ? 'fall' : 'winter';
    } 
 }
+
 saison = this.getCurrentSeason();
 getSaison(){
   return this.saison;
@@ -138,9 +139,7 @@ ngOnInit(){
   this.getCurrentSeason();
 }
 
-
-
-  }
+}
 
 
 
