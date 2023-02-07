@@ -39,7 +39,6 @@ bonus: boolean = false
 indexChoix = 0
 list = []
 
-
 // URL DE L'API //
   URL2 = 'https://www.themealdb.com/api/json/v1/1/search.php?s&count=20';
   constructor (public http: HttpClient,  ){  }

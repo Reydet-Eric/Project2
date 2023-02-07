@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
+import { ServicerecetteService } from '../servicerecette.service';
 
 @Component({
   selector: 'app-header',
@@ -7,11 +8,11 @@ import { Router } from '@angular/router';
   styleUrls: ['./header.component.scss']
 })
 export class HeaderComponent {
-  
+
   datedujour = new Date();
 
   isMenuOpen = false;
-  
+
   toggleMenu(): void{
     this.isMenuOpen = !this.isMenuOpen;
   }
@@ -48,15 +49,17 @@ export class HeaderComponent {
     return this.day < 22 ? 'summer' : 'automn';
   } else if (this.month == 12) {
     return this.day < 22 ? 'fall' : 'winter';
-   } 
+   }
 }
-saison = this.getCurrentSeason();
+saison: string= this.getCurrentSeason();
+
+
 
 // Si nous sommes en Hiver; on affiche la page seasonHiver quand on clique sur About//
 
 routeSaison(): any{
 
-if(this.saison === 'Winter'){
+if(this.saison == 'Winter'){
   return './season-winter';
 }
 if(this.saison === 'Spring'){
