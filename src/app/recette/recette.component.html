@@ -1,32 +1,32 @@
-
-
-
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+<link
+  rel="stylesheet"
+  href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+  integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+  crossorigin="anonymous"
+/>
 
 <div class="searchBar">
-    
-    <!-- <input type="text" name="search" [(ngModel)]="searchText" placeholder="Search your recipes"> -->
-<!-- <h1>{{meals[0].strMeal}}</h1> -->
-    <input class="searchbarr" type="text" name="search" [(ngModel)]="searchText" placeholder="Search your recipes">
-    <button  type="submit" class="search_button"><i class="fa fa-search"></i></button>
-<div class="bloc">
-
-  <!-- [routerLink]="['season']" [queryParams]="{debug: meals[0].strMeal}" -->
-  <!-- routerLink="/detail/{{hero.id}}" -->
-<div [routerLink]="['/instruction', meal.idMeal]" [queryParams]="{idMeal:  meal.idMeal }"  class="contenu" *ngFor="let meal of meals |filter:searchText  ">
-    <div class="box">
-      <!-- <div class="imbox"> -->
-        <h1>{{meal.strMeal}}</h1>
-        <img src="{{meal.strMealThumb}}" alt="recettes">
-      
-      <!-- <div class="text"> -->
-       
-        <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus aspernatur quia accusantium in officia reiciendis voluptates ad consequuntur earum sunt sed, accusamus odio facilis exercitationem optio odit ratione unde nulla.</p> -->
- 
+  <input
+    class="searchbarr"
+    type="text"
+    name="search"
+    [(ngModel)]="searchText"
+    placeholder="Search your recipes"
+  />
+  <button type="submit" class="search_button">
+    <i class="fa fa-search"></i>
+  </button>
+  <div class="bloc">
+    <div
+      [routerLink]="['/instruction', meal.idMeal]"
+      [queryParams]="{ idMeal: meal.idMeal }"
+      class="contenu"
+      *ngFor="let meal of meals | filter : searchText"
+    >
+      <div class="box">
+        <h1>{{ meal.strMeal }}</h1>
+        <img src="{{ meal.strMealThumb }}" alt="recettes" />
       </div>
     </div>
-
   </div>
-  
-  
 </div>
