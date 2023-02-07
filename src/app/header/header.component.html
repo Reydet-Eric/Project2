@@ -1,34 +1,29 @@
+<div class="entete">
+  <div class="sousEntete">
+    <img class="logo" src="./assets/logo-cuisine.jpg" alt="logo" />
+    <p class="date">
+      {{ datedujour | date : "dd MMMM yyyy" }} - Season: {{ saison }}
+      <img class="icon" src="{{ urlsaison }}" />
+    </p>
+  </div>
 
+  <nav id="my-first">
+    <ul>
+      <li class="burger" (click)="toggleMenu()">
+        <i class="material-icons">{{ isMenuOpen ? "X" : "=" }}</i>
+      </li>
 
-
-  <div class="entete">
-    <div class="sousEntete">
-     <img class="logo" src="./assets/logo-cuisine.jpg" alt="logo">
-     <p class="date">{{datedujour | date: "dd MMMM yyyy"}} - Season: {{saison}}  <img class="icon" src={{urlsaison}}></p>
-
-    </div>
-
-<nav id="my-first">
-
-<ul>
-  <li class="burger" (click)="toggleMenu()">
-      <i class="material-icons">{{ isMenuOpen ? "X" : "=" }}</i>
-  </li>
-
-  <li class="menu" [class.is-open]="isMenuOpen">
-
-    <a routerLink="home" class="menu-item">Home</a>
-    <a href="#" class="menu-item" (click)="routeSaison()">About seasons</a>
-    <a routerLink="season" class="menu-item">Recipes</a>
- 
-  </li>
-
-</ul>
-</nav>
+      <li class="menu" [class.is-open]="isMenuOpen">
+        <a routerLink="home" class="menu-item">Home</a>
+        <a href="#" class="menu-item" routerLink="{{ routeSaison() }}"
+          >About seasons</a
+        >
+        <a routerLink="season" class="menu-item">Recipes</a>
+      </li>
+    </ul>
+  </nav>
 </div>
 <div class="bloc1">
-<h1>Eat in season</h1>
-<h2>Your pleasure</h2>
-
-
-
+  <h1>Eat in season</h1>
+  <h2>Your pleasure</h2>
+</div>
