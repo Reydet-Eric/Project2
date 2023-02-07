@@ -1,23 +1,111 @@
 *{
+  margin:0;
+  padding:0;
+}
 
-    margin:0;
-    padding:0;
+.positionphoto{
 
-  }
+display: flex;
+justify-content: center;
+gap: 5px;
+margin: 10px;
 
-
-   .tuilephoto{
-    //  margin-top: 50%;
-     margin-bottom: 30%;
-   }
+}
 
 
- 
+
+
+.container{
 
 
 .positionphoto{
 
 
+background-image: url("/assets/summer.png");
+background-size:cover;
+height: 200px;
+width: 50%;
+font-weight: bold;
+font-size: 25px;
+position: relative;
+display:flex;
+align-items: center;
+justify-content: center;
+border-radius: 5px;
+
+
+}
+
+
+.container1{
+
+background-image: url("/assets/autumn.png");
+background-size: cover;
+height: 200px;
+width: 50%;
+font-weight: bold;
+font-size: 25px;
+position: relative;
+display:flex;
+align-items: center;
+justify-content: center;
+border-radius: 5px;
+}
+
+.container2{
+
+ background-image: url("/assets/winter.png");
+ background-size: cover;
+height: 200px;
+width: 50%;
+font-weight: bold;
+font-size: 25px;
+position: relative;
+display:flex;
+align-items: center;
+justify-content: center;
+border-radius: 5px;
+}
+
+.container3{
+
+background-image: url("/assets/spring.png");
+background-size: cover;
+height: 200px;
+width: 50%;
+font-weight: bold;
+font-size: 25px;
+position: relative;
+display:flex;
+align-items: center;
+justify-content: center;
+border-radius: 5px;
+}
+
+.overlay{
+
+  font-family: 'Dancing Script', cursive;
+  font-size: 40px;
+  background-color: antiquewhite;
+  opacity:65%;
+  border-radius: 40%;
+  padding:5px;
+}
+
+
+.overlay:hover{
+
+  color: white;
+  background-color: black;
+  padding:10px;
+  
+}
+
+@media (min-width: 768px){
+
+
+
+.positionphoto{
 
   display: flex;
   justify-content: center;
@@ -26,8 +114,11 @@
  }
 
 .container{
- 
-  background-image: url("/assets/automne.jpg");
+
+
+  background-image: url("/assets/summer.png");
+
+
   background-size:cover;
   height: 200px;
   width: 50%;
@@ -42,7 +133,7 @@
 
 .container1{
 
-  background-image: url("/assets/autumn.png");    
+  background-image: url("/assets/autumn.png");
   background-size: cover;
   height: 200px;
   width: 50%;
@@ -72,7 +163,9 @@
 
 .container3{
 
-  background-image: url("/assets/cuisinre.jpg");    
+
+  background-image: url("/assets/spring.png");
+
   background-size: cover;
   height: 200px;
   width: 50%;
@@ -86,31 +179,109 @@
 }
 
 
+@media (min-width: 820px){
+  
+  
+  // .tuilephoto{
+  //   margin-top: 10%;
+  //   margin-bottom: 20%;
+  // }
 
 
-
-.tuilephoto{
-  margin-top: 10%;
-  margin-bottom: 20%;
-}
-
-
-@media screen and (min-width: 768px){
   .positionphoto{
-
 
     display: flex;
     justify-content: center;
     gap: 5px;
-    margin-top: 5px;
-   }
+    margin: 10px;
+    
+    }
+
+
+    .container{
+
+      background-image: url("/assets/summer.png");
+      background-size:cover;
+      height: 450px;
+      width: 50%;
+      font-weight: bold;
+      font-size: 25px;
+      position: relative;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+    }
+    
+    .container1{
+    
+      background-image: url("/assets/autumn.png");
+      background-size: cover;
+      height: 450px;
+      width: 50%;
+      font-weight: bold;
+      font-size: 25px;
+      position: relative;
+      display:flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 5px;
+    }
+    
+    
+.container2{
+
+  background-image: url("/assets/winter.png");
+  background-size: cover;
+ height: 450px;
+ width: 50%;
+ font-weight: bold;
+ font-size: 25px;
+ position: relative;
+ display:flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 5px;
+}
+
+.container3{
+
+ background-image: url("/assets/spring.png");
+ background-size: cover;
+ height: 450px;
+ width: 50%;
+ font-weight: bold;
+ font-size: 25px;
+ position: relative;
+ display:flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 5px;
+}
+
+
+
+.overlay{
+
+  font-family: 'Dancing Script', cursive;
+  font-size: 60px;
+  background-color: antiquewhite;
+  opacity:65%;
+}
+
+}
+
+@media (min-width: 1280px){
+
 
   .container{
-   
-    background-image: url("/assets/automne.jpg");
+
+
+    background-image: url("/assets/summer.png");
+
     background-size:cover;
-    height: 400px;
-    width: 50%;
+    height: 270px;
+    width: 20%;
     font-weight: bold;
     font-size: 25px;
     position: relative;
@@ -119,10 +290,11 @@
     justify-content: center;
     border-radius: 5px;
   }
-
+  
   .container1{
- 
-    background-image: url("/assets/autumn.png");    
+
+    background-image: url("/assets/autumn.png");
+
     background-size: cover;
     height: 400px;
     width: 50%;
@@ -136,7 +308,7 @@
   }
 
   .container2{
-  
+
      background-image: url("/assets/winter.png");
      background-size: cover;
     height: 400px;
@@ -152,10 +324,10 @@
 
   .container3{
 
-    background-image: url("/assets/cuisinre.jpg");    
+ background-image: url("/assets/spring.png");
     background-size: cover;
-    height: 400px;
-    width: 50%;
+    height: 270px;
+    width: 20%;
     font-weight: bold;
     font-size: 25px;
     position: relative;
@@ -166,16 +338,38 @@
   }
 
   
-  .tuilephoto{
-    margin-top: 10%;
-    margin-bottom: 20%;
-  }
+.container2{
 
-  
+background-image: url("/assets/winter.png");
+background-size: cover;
+height: 270px;
+width: 20%;
+font-weight: bold;
+font-size: 25px;
+position: relative;
+display:flex;
+align-items: center;
+justify-content: center;
+border-radius: 5px;
+}
 
-  
-  
+.container3{
+
+background-image: url("/assets/spring.png");
+background-size: cover;
+height: 270px;
+width: 20%;
+font-weight: bold;
+font-size: 25px;
+position: relative;
+display:flex;
+align-items: center;
+justify-content: center;
+border-radius: 5px;
+
+
 }
 
 
 
+}}
