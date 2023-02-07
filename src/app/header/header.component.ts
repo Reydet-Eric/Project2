@@ -50,4 +50,7 @@ export class HeaderComponent {
    } 
 }
 saison = this.getCurrentSeason();
+
+
+winter = "Winter"
 }
