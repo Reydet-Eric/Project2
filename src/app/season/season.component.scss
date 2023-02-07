@@ -1,128 +1,107 @@
-
-.collection{
-  display:flex;
+* {
+  margin: 0;
+  padding: 0;
+}
+.collection {
+  display: flex;
   flex-wrap: wrap;
   width: 80%;
   padding: 20px;
   margin: 20px;
-  // flex-direction: row;
-
-  // width: 100%;
-  // gap:10px;
-  // padding:10px;
-
-
-
 }
 
-h1{
-
-  display:flex;
+h1 {
+  display: flex;
   text-align: center;
   margin: auto;
 }
 
-.veget{
-// border: solid 1px;
-margin: auto;
-border-radius: 5px;
-padding:10px;
-align-items: center;
-justify-content: center;
+.veget {
+  margin: auto;
+  border-radius: 5px;
+  padding: 10px;
+  align-items: center;
+  justify-content: center;
 }
 
-.body{
-  padding:10px;
+.body {
+  padding: 10px;
 }
 
-.checking{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 5%;
+.checking {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 5%;
 
-    border: 20px solid #fff;
-    box-shadow: 20px 15px 35px rgba(0,0,0, 0.8);
-    width: 80%;
-    margin: auto;
-
+  border: 20px solid #fff;
+  box-shadow: 20px 15px 35px rgba(0, 0, 0, 0.8);
+  width: 80%;
+  margin: auto;
 }
 .ingredientTitre {
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
-.ingredientTitre h1{
+.ingredientTitre h1 {
   font-size: 30px;
 }
-.checking input[type="checkbox"]  {
+.checking input[type="checkbox"] {
+  display: flex;
 
-    display: flex;
-
-    align-items: center;
-    width: 1.4em;
-    height: 1.4em;
-    border: 1px solid #343a3f;
-    border-radius: 0.2em;
-    background: rgba(255, 255, 255, 0.03);
-    box-shadow: -2px -1px 0 #343a3f;
-    background: #f3f3f3;
-
+  align-items: center;
+  width: 1.4em;
+  height: 1.4em;
+  border: 1px solid #343a3f;
+  border-radius: 0.2em;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: -2px -1px 0 #343a3f;
+  background: #f3f3f3;
 }
-.checking h2{
-
-font-size: 1rem;
+.checking h2 {
+  font-size: 1rem;
 }
 
-button{
-    text-decoration: none;
-    background: #FAF0E6;
-    color: black;
-    font-weight: bold;
-    padding: 10px 60px;
-    border-radius: 30px;
-    box-shadow: 0 3px 7px rgba(0, 0, 0, 0.4);
-    transition: all 0.2s;
-    margin-bottom: 50px;
-    margin-top: 40px;
+button {
+  text-decoration: none;
+  background: #faf0e6;
+  color: black;
+  font-weight: bold;
+  padding: 10px 60px;
+  border-radius: 30px;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.4);
+  transition: all 0.2s;
+  margin-bottom: 50px;
+  margin-top: 40px;
 }
-@media screen and (min-width: 400px)  {
+@media screen and (min-width: 400px) {
   .veget {
- 
- align-items: center;
-text-align: center;
-margin-left: -25px;
-}
-
-}
-@media screen and (min-width: 400px)  {
-  .collection {
- width: 100%;
- 
-
-}
-
-}
-
-@media screen and (max-width: 800px)  {
-  .veget h4 {
- 
-display: none;
-
-}}
-
-
-@media screen and (min-width: 800px) and (max-width : 1110px) {
-.collection{
-
-display: flex;
-
-
-
+    align-items: center;
+    text-align: center;
+    margin-left: -25px;
   }
-.veget{
- margin: 16px;
-flex-wrap: wrap;
-}}
+
+  .collection {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .veget h4 {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .collection {
+    display: flex;
+  }
+  .veget {
+    margin: 16px;
+    flex-wrap: wrap;
+  }
+}
