@@ -22,7 +22,6 @@ export class HeaderComponent {
   urlsaison: string = this.service.getIcons();
 
   routeSaison(): any {
-    // console.log(this.saison);
     if (this.saison === 'Winter') {
       return './season-winter';
     }

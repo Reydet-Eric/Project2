@@ -9,7 +9,6 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
-
 import { SeasonComponent } from './season/season.component';
 import { RecetteComponent } from './recette/recette.component';
 import { HomeComponent } from './home/home.component';
@@ -37,7 +36,6 @@ import { VegetableComponent } from './vegetable/vegetable.component';
     SeasonAutomnComponent,
     InstructionComponent,
     VegetableComponent,
-   
   ],
 
   imports: [
