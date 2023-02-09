@@ -1,32 +1,49 @@
 <h1>Fruits and Vegetables of Summer</h1>
-<p>You know summer's the perfect time to switch to flip-flops, but did you know it's also the right time to change your
-  diet? Being outdoors more often – and sweating – ups your risk for health problems such as dehydration, skin
-  sensitivities, and vitamin and mineral deficiencies. The simple (and delicious) solution? Eat local, in-season fruits.
-  Their nutrients are at their peak in the summer.</p>
-
+<p>
+  You know summer's the perfect time to switch to flip-flops, but did you know
+  it's also the right time to change your diet? Being outdoors more often – and
+  sweating – ups your risk for health problems such as dehydration, skin
+  sensitivities, and vitamin and mineral deficiencies. The simple (and
+  delicious) solution? Eat local, in-season fruits. Their nutrients are at their
+  peak in the summer.
+</p>
 
 <div class="titre">
-  <h2>Vegetables: </h2>
+  <h2>Vegetables:</h2>
 </div>
 <div class="collection">
-  <div class="veget" *ngFor="let item of veget; let index=index" (click)="affichBonus(index,veget)">
-    <div *ngIf="item.type=='vegetable'">
-      <div *ngIf="item.type=='fruit'" class="masque"></div>
-      <div>{{item.name}}</div>
-      <img src="{{item.clipart}}" alt="clipart" width="100px" height="100px">
+  <div
+    class="veget"
+    *ngFor="let item of veget; let index = index"
+    (click)="affichBonus(index, veget)"
+  >
+    <div *ngIf="item.type == 'vegetable'">
+      <div *ngIf="item.type == 'fruit'" class="masque"></div>
+      <div>{{ item.name }}</div>
+      <img
+        src="{{ item.clipart }}"
+        alt="clipart"
+        width="100px"
+        height="100px"
+      />
     </div>
   </div>
 </div>
 
 <div class="titre">
-  <h2>Fruits: </h2>
+  <h2>Fruits:</h2>
 </div>
 <div class="collection2">
-  <div class="veget" *ngFor="let item of veget; let index=index">
-    <div *ngIf="item.type=='fruit'" (click)="affichBonus(index,veget)">
-      <div>{{item.name}}</div>
-      <img src="{{item.clipart}}" alt="clipart" width="100px" height="100px">
+  <div class="veget" *ngFor="let item of veget; let index = index">
+    <div *ngIf="item.type == 'fruit'" (click)="affichBonus(index, veget)">
+      <div>{{ item.name }}</div>
+      <img
+        src="{{ item.clipart }}"
+        alt="clipart"
+        width="100px"
+        height="100px"
+      />
     </div>
   </div>
 </div>
-<app-vegetable *ngIf="infosPlus" (close)="closeBonus()" ></app-vegetable>
+<app-vegetable *ngIf="infosPlus" (close)="closeBonus()"></app-vegetable>
