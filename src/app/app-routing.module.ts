@@ -14,11 +14,13 @@ const routes: Routes = [
   { path: 'season', component: SeasonComponent },
   { path: 'instruction/:idMeal', component: InstructionComponent },
   { path: 'home', component: HomeComponent },
+  { path: '', component: HomeComponent },
 
   { path: 'season-spring', component: SeasonSpringComponent },
   { path: 'season-summer', component: SeasonSummerComponent },
   { path: 'season-winter', component: SeasonWinterComponent },
   { path: 'season-autumn', component: SeasonAutomnComponent },
+
 ];
 
 @NgModule({
