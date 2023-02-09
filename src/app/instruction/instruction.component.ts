@@ -71,16 +71,15 @@ export class InstructionComponent implements OnInit {
 
   ngOnInit(): void {
     this.mealId = this.activatedRoute.snapshot.params['idMeal'];
-    // this.meal= this.service.touterecette.find((x: any) => x.idMeal === this.mealId);
+ 
     console.log('alioune ', this.mealId);
     fetch(`https://www.themealdb.com/api/json/v1/1/lookup.php?i=${this.mealId}`)
       .then((data) => data.json())
       .then((mealFromAPI) => {
-        // { meals: [ {strMeal: "corba"} ] }
-        const { meals } = mealFromAPI; // [ {strMeal: "corba"} ]
-        console.log('&&&&&&', meals[0]); // {strMeal: "corba"}
+     
+        const { meals } = mealFromAPI; 
+        console.log('&&&&&&', meals[0]); 
         this.meal = meals[0];
-        // this.meal = mealFromAPI.meals[0]: Ceci est l'équivalent de la déconstruction plus haut
       });
   }
 }
